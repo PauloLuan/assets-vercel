@@ -1,0 +1,849 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/styles.133dbdfe631720b2d725.css" id="gatsby-global-css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:none;text-shadow:0 1px rgba(0,0,0,.3);font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#272822}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#8292a2}.token.punctuation{color:#f8f8f2}.token.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#f92672}.token.boolean,.token.number{color:#ae81ff}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#a6e22e}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.class-name,.token.function{color:#e6db74}.token.keyword{color:#66d9ef}.token.important,.token.regex{color:#fd971f}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.28.1"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2374911412821725'); // Insert your pixel ID here.
+  fbq('track', 'PageView');
+      </script><script>window.dataLayer = window.dataLayer || [];window.dataLayer.push({"platform":"plataforma-reativa"}); (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer', 'GTM-KZH8KWD');</script><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/favicon-32x32.png?v=d2742f2dddd737dec60ee2a5226edb06" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=d2742f2dddd737dec60ee2a5226edb06"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=d2742f2dddd737dec60ee2a5226edb06"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=d2742f2dddd737dec60ee2a5226edb06"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=d2742f2dddd737dec60ee2a5226edb06"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=d2742f2dddd737dec60ee2a5226edb06"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=d2742f2dddd737dec60ee2a5226edb06"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=d2742f2dddd737dec60ee2a5226edb06"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=d2742f2dddd737dec60ee2a5226edb06"/><title data-react-helmet="true">Linux: Apostila Completa de Bash | Reativa Tecnologia</title><meta data-react-helmet="true" name="description" content="Bash: Apostila completa"/><meta data-react-helmet="true" property="og:title" content="Linux: Apostila Completa de Bash"/><meta data-react-helmet="true" property="og:description" content="Bash: Apostila completa"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Reativa"/><meta data-react-helmet="true" name="twitter:title" content="Linux: Apostila Completa de Bash"/><meta data-react-helmet="true" name="twitter:description" content="Bash: Apostila completa"/><link as="script" rel="preload" href="/webpack-runtime-21c9d4a6b4882039bec8.js"/><link as="script" rel="preload" href="/styles-755093da0c07f4b49226.js"/><link as="script" rel="preload" href="/framework-8e528b732ab2eaadb7b7.js"/><link as="script" rel="preload" href="/532a2f07-8d0154c2cf59560b38a4.js"/><link as="script" rel="preload" href="/app-6d831502f5b033c00c9a.js"/><link as="script" rel="preload" href="/commons-8efd3e762cdb1d39fca0.js"/><link as="script" rel="preload" href="/cd7d5f864fc9e15ed8adef086269b0aeff617554-1c0ef869a859675a1e93.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-eea8ccbf252e87f3a147.js"/><link as="fetch" rel="preload" href="/page-data/linux_bash_handbook/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1061827086.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/63159454.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZH8KWD" height="0" width="0" style="display: none; visibility: hidden" aria-hidden="true"></iframe></noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0">Reativa Tecnologia</h3></header><main><article><header><h1 style="margin-top:1.75rem;margin-bottom:0">Linux: Apostila Completa de Bash</h1></header><section><hr>
+<p><a href="https://bit.ly/guia-dev-autodidata" target="_blank" rel="nofollow noopener noreferrer"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--yoCUdHry--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/n1oq7vn2utzsxc4nui45.png" alt="Como"></a></p>
+<hr>
+<p>Vamos mergulhar nos comandos do Linux!</p>
+<blockquote>
+<p><strong>Dica</strong>: Dê uma olhada em <a href="https://git.io/learnyoubash" target="_blank" rel="nofollow noopener noreferrer"><strong>learnyoubash</strong></a> — são exercícios interativos baseados nesse documento!</p>
+</blockquote>
+<h1>Instalando o guia através do Node</h1>
+<p>Você pode instalar esse documento usando <code class="language-text">npm</code>. Execute:</p>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">$ npm install -g bash-handbook</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<p>Você será capaz de executar <code class="language-text">bash-handbook</code> na sua linha de comando.</p>
+<h1>Índice</h1>
+<ul>
+<li><a href="#introdu%C3%A7%C3%A3o">Introdução</a></li>
+<li>
+<p><a href="#estilos-do-shell">Estilos do shell</a></p>
+<ul>
+<li><a href="#modo-interativo">Interativo</a></li>
+<li><a href="#modo-n%C3%A3o-interativo">Não-interativo</a></li>
+<li><a href="#c%C3%B3digos-de-sa%C3%ADda">Códigos de saída</a></li>
+</ul>
+</li>
+<li><a href="#coment%C3%A1rios">Comentários</a></li>
+<li>
+<p><a href="#vari%C3%A1veis">Variáveis</a></p>
+<ul>
+<li><a href="#vari%C3%A1veis-locais">Variáveis locais</a></li>
+<li><a href="#vari%C3%A1veis-de-ambiente">Variáveis de ambiente</a></li>
+<li><a href="#par%C3%A2metros-de-posi%C3%A7%C3%A3o">Parâmetros de posição</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#expans%C3%B5es-do-shell">Expansões do shell</a></p>
+<ul>
+<li><a href="#expans%C3%B5es-de-suporte">Expansões de suporte</a></li>
+<li><a href="#substitui%C3%A7%C3%A3o-de-comandos">Substituição de comandos</a></li>
+<li><a href="#expans%C3%B5es-aritim%C3%A9ticas">Expansões aritiméticas</a></li>
+<li><a href="#aspas-simples-e-duplas">Aspas simples e duplas</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#arrays">Arrays</a></p>
+<ul>
+<li><a href="#declarando-array">Declarando array</a></li>
+<li><a href="#expans%C3%B5es-de-array">Expansões de Array</a></li>
+<li><a href="#separando-array">Separando Array</a></li>
+<li><a href="#adicionando-elementos-no-array">Adicionando elementos no Array</a></li>
+<li><a href="#deletando-elementos-de-um-array">Deletando elementos de um Array</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#streams-pipes-e-listas">Streams, pipes e listas</a></p>
+<ul>
+<li><a href="#streams">Streams</a></li>
+<li><a href="#pipes">Pipes</a></li>
+<li><a href="#lista-de-comando">Lista de comandos</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#operadores-condicionais">Operadores condicionais</a></p>
+<ul>
+<li><a href="#express%C3%B5es-prim%C3%A1rias-e-combina%C3%A7%C3%A3o-de-express%C3%B5es">Expressões primárias e combinação de expressões</a></li>
+<li><a href="#usando-a-condicional-if">Usando a condicional <code class="language-text">if</code></a></li>
+<li><a href="#usando-a-condicional-case">Usando a condicional <code class="language-text">case</code></a></li>
+</ul>
+</li>
+<li>
+<p><a href="#loops">Loops</a></p>
+<ul>
+<li><a href="#for-loop"><code class="language-text">for</code> loop</a></li>
+<li><a href="#while-loop"><code class="language-text">while</code> loop</a></li>
+<li><a href="#until-loop"><code class="language-text">until</code> loop</a></li>
+<li><a href="#select-loop"><code class="language-text">select</code> loop</a></li>
+<li><a href="#controlando-o-loop">Controlando o loop</a></li>
+</ul>
+</li>
+<li><a href="#fun%C3%A7%C3%B5es">Funções</a></li>
+<li><a href="#depurando">Depurando</a></li>
+<li><a href="#posf%C3%A1cio">Posfácio</a></li>
+<li><a href="#license">Licença</a></li>
+</ul>
+<h1>Introdução</h1>
+<p>Se você é um desenvolvedor, então você sabe o valor que o tempo tem. Otimizar seu processo de trabalho é um dos mais importantes aspectos do seu dia-a-dia.</p>
+<p>E, se entrarmos no caminho em direção à eficiência e produtividade, sempre esbarramos em ações que serão repetidas uma vez ou outra, como:</p>
+<ul>
+<li>tirar um <em>screenshot</em> e fazer o upload para um servidor</li>
+<li>processar texto em vários formatos</li>
+<li>converter arquivos entre diferentes formatos</li>
+<li>analisar o resultado da execução de um programa</li>
+</ul>
+<p>Entra em cena, o <strong>Bash</strong>, nosso salvador.</p>
+<p>Bash é um shell Unix escrito por <a href="https://en.wikipedia.org/wiki/Brian_Fox_(computer_programmer)" target="_blank" rel="nofollow noopener noreferrer">Brian Fox</a> no formato de software livre para o projeto GNU, com a intenção de substituir o <a href="https://en.wikipedia.org/wiki/Bourne_shell" target="_blank" rel="nofollow noopener noreferrer">Bourne shell</a>. Ele foi lançado em 1989 e tem sido distribuído como shell padrão no Linux e macOS a um longo tempo.</p>
+<!-- link this format, because some MD processors handle '()' in URLs poorly -->
+<p>E porque nós precisamos aprender algo que foi escrito a mais de 30 anos? A resposta é simples: essa <em>coisa</em>, hoje em dia, é uma das mais poderosas e portáveis ferramentas para escrever scripts para todos os sitemas baseados em Unix. E isso é a razão pela qual você deve aprender bash. Ponto.</p>
+<p>Nesse manual, eu vou descrever os conceitos mais importantes do bash através de exemplos. Eu espero que seja útil para você e que você possa aprender algo através deles.</p>
+<h1>Estilos do shell</h1>
+<p>O usuário do shell bash pode trabalhar em dois modos - interativo e não-interativo.</p>
+<h2>Modo Interativo</h2>
+<p>Se você estiver trabalhando no Ubuntu, você tem sete terminais virtuais disponíveis para você. O ambiente de trabalho se posiciona no sétimo terminal virtual. Você pode voltar para uma GUI mais amigável usando o atalho <code class="language-text">Ctrl-Alt-F7</code>.</p>
+<p>Você pode abrir o shell usando o atalho <code class="language-text">Ctrl-Alt-F1</code>. Depois disso, a GUI que você acostuma utilizar irá desaparecer e um dos terminais virtuais será mostrado.</p>
+<p>Se você ver algo parecido com isso, então, você está trabalhando no modo interativo:</p>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">user@host:~$</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<p>Aqui você pode digitar uma variedade de comandos Unix, como <code class="language-text">ls</code>, <code class="language-text">grep</code>, <code class="language-text">cd</code>, <code class="language-text">mkdir</code>, <code class="language-text">rm</code> e ver o resultado das suas execuções.</p>
+<p>Chamamos isso de shell interativo porque ele interage diretamente com o usuário.</p>
+<p>Usar um terminal virtual, nem sempre é conveniente. Por exemplo, se você quiser editar um documento e executar um comando ao mesmo tempo, é melhor você usar um emulador de terminais virtuais, como:</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/GNOME_Terminal" target="_blank" rel="nofollow noopener noreferrer">GNOME Terminal</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Terminator_(terminal_emulator)" target="_blank" rel="nofollow noopener noreferrer">Terminator</a></li>
+<li><a href="https://en.wikipedia.org/wiki/ITerm2" target="_blank" rel="nofollow noopener noreferrer">iTerm2</a></li>
+<li><a href="https://en.wikipedia.org/wiki/ConEmu" target="_blank" rel="nofollow noopener noreferrer">ConEmu</a></li>
+</ul>
+<h2>Modo não-interativo</h2>
+<p>No modo não-interativo, o shell recebe comandos de um arquivo ou um <em>pipe</em> e executa eles. Quando o interpretador chega no final do arquivo, a sessão de processamento do shell é terminada e o processo anterior é retornado.</p>
+<p>Use os seguintes comandos para executar o shell em modo não-interativo:</p>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">. /path/to/script.sh
+bash /path/to/script.sh</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<p>No exemplo acima, <code class="language-text">script.sh</code> é apenas um arquivo de texto comum, contendo comandos, que o interpretador shell pode executar. <code class="language-text">sh</code> ou <code class="language-text">bash</code> são interpretadores utilizados pelo shell. Você pode criar um <code class="language-text">script.sh</code> usando seu editor de texto preferido (e.g. vim, nano, Sublime Text, Atom, etc).</p>
+<p>Você também pode simplificar a invocação do script transformando o arquivo em um executável usando o comando <code class="language-text">chmod</code>:</p>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">chmod +x /path/to/script.sh</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<p>Além disso, a primeira linha do script deve indicar qual programa deve ser usado para executar o arquivo, como:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
+<span class="token builtin class-name">echo</span> <span class="token string">"Hello, world!"</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<p>Ou, se você preferir usar <code class="language-text">sh</code> ao invés do <code class="language-text">bash</code>, mude <code class="language-text">#!/bin/bash</code> para <code class="language-text">#!/bin/sh</code>. Essa sequência de carácteres <code class="language-text">#!</code>, é conhecida como <a href="http://en.wikipedia.org/wiki/Shebang_%28Unix%29" target="_blank" rel="nofollow noopener noreferrer">shebang</a>. Agora você pode executar scripts da seguinte maneira:</p>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">/path/to/script.sh</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<p>Um truque útil que usamos acima, é usar o comando <code class="language-text">echo</code> para imprimir o texto na tela do terminal.</p>
+<p>Uma outra maneira de usar o <em>shebang</em> é:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token shebang important">#!/usr/bin/env bash</span>
+<span class="token builtin class-name">echo</span> <span class="token string">"Hello, world!"</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<p>A vantagem desse modo de uso do <em>shebang</em> é que ele irá utilizar o programa (nesse caso o <code class="language-text">bash</code>) baseado no caminho <code class="language-text">PATH</code> do seu ambiente. Esse modo é, muitas vezes, preferido, ao invés de usar o primeiro método mostrado acima, onde a localização do programa no seu ambiente, pode não ser a mesmo. Isso também é útil se a variável <code class="language-text">PATH</code>, em um sistema, estiver configurada para uma versão diferente do programa. Um exemplo, seria a instalação de uma nova versão do <code class="language-text">bash</code>, enquanto preservamos a versão original e inserimos a localização da nova versão na variável <code class="language-text">PATH</code> do sistema. O uso do <code class="language-text">#!/bin/bash</code> pode resultar no uso da versão original do <code class="language-text">bash</code>, enquanto, <code class="language-text">#!/usr/bin/env bash</code>, fará uso da nova versão.</p>
+<h2>Códigos de saída</h2>
+<p>Todo comando retorna um <strong>código de sáida</strong> (<strong>retornando o estado</strong> ou o <strong>estado de saída</strong>). Um comando executado com sucesso, sempre retorna <code class="language-text">0</code> (código-zero), e um comando executado com falha, sempre retorna um valor não-zero (código de erro). Códigos de falhas devem conter um número inteiro positivo entre 1 e 255.</p>
+<p>Outro comando útil que nós podemos usar quando escrevemos scripts é o <code class="language-text">exit</code>. Esse omando é usado para finalizar a execução atual e retornar um código de saída para o shell. Executando o <code class="language-text">exit</code>, sem nenhum argumento, irá terminar o script que está em processamento e retornar o código de saída do último comando executado antes do <code class="language-text">exit</code>.</p>
+<p>Quando um programa é finalizado, o shell atribui ao seu <strong>código de saída</strong> há variável <code class="language-text">$?</code>. A variável <code class="language-text">$?</code>, é o que normalmente usamos para testar se um script foi executado com sucesso ou não.</p>
+<p>Do mesmo modo que podemos usar <code class="language-text">exit</code> para terminar um script, nós podemos usar o comando <code class="language-text">return</code> para sair de uma função e retornar o <strong>código de saída</strong> para quem invocou essa função. Você também pode usar <code class="language-text">exit</code> dentro de uma função, isso irá resultar na saída da função <em>e</em> na finalização do programa.</p>
+<h1>Comentários</h1>
+<p>Scripts podem conter <em>comentários</em>. Comentários são declarações especiais ignoradas pelo interpretador do <code class="language-text">shell</code>. O início de um comentário deve conter o símbolo <code class="language-text">#</code> e continuar até o final da linha.</p>
+<p>Por exemplo:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
+<span class="token comment"># Esse script irá imprimir seu nome de usuário.</span>
+<span class="token function">whoami</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span></span></pre></div>
+<blockquote>
+<p><strong>Dica</strong>: Use comentários para explicar o que seu script faz e <em>porque</em>.</p>
+</blockquote>
+<h1>Variáveis</h1>
+<p>Como na maioria das linguages de programação, você pode criar variáveis no bash.</p>
+<p>Bash não conhece nenhum tipo de dados. Variáveis podem conter apenas números ou <em>strings</em>. Existem três tipos de variáveis que você pode criar: variáveis locais, variáveis de ambiente e variáveis de <em>parâmetros posicionados</em>.</p>
+<h2>Variáveis locais</h2>
+<p><strong>Variáveis locais</strong> são variáveis que existem apenas no contido script. Elas são inacessíveis para outros programas ou scripts.</p>
+<p>Uma variável local pode ser declarada usando o sinal <code class="language-text">=</code> (como regra, <strong>não deve</strong> conter nenhum espaço entre o nome da variável, <code class="language-text">=</code> e o seu valor) e seu valor pode ser acessado usando o sinal <code class="language-text">$</code>. Por exemplo:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token assign-left variable">username</span><span class="token operator">=</span><span class="token string">"pauloluan"</span>    <span class="token comment"># declarando a variável</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">$username</span>          <span class="token comment"># imprimindo seu valor</span>
+<span class="token builtin class-name">unset</span> username          <span class="token comment"># deletando a variável</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span></span></pre></div>
+<p>Nós podemos declarar uma variável local para uma única função usando a declaração <code class="language-text">local</code>. Com isso, a variável será automaticamente deletada quando a função terminar de ser executada.</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token builtin class-name">local</span> <span class="token assign-left variable">local_var</span><span class="token operator">=</span><span class="token string">"Sou uma variável local"</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<h2>Variáveis de ambiente</h2>
+<p><strong>Variáveis de ambiente</strong> são variáveis que podem ser acessadas por qualquer programa ou script sendo executado na sessão atual do shell. Elas são criadas como variáveis locais, mas usando a declaração <code class="language-text">export</code> no início delas.</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token builtin class-name">export</span> <span class="token assign-left variable">GLOBAL_VAR</span><span class="token operator">=</span><span class="token string">"Sou uma variável global"</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<p>Existem <em>muitas</em> variáveis globais no bash. Você vai conhecer elas no decorrer do seu dia-a-dia, mas aqui você encontra uma tabela com as mais utilizadas:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Variáveis</th>
+<th align="left">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code class="language-text">$HOME</code></td>
+<td align="left">O diretório inicial do usuário atual.</td>
+</tr>
+<tr>
+<td align="left"><code class="language-text">$PATH</code></td>
+<td align="left">Uma lista separada por dois pontos <code class="language-text">[:]</code> dos diretários que o shell irá procurar por comandos.</td>
+</tr>
+<tr>
+<td align="left"><code class="language-text">$PWD</code></td>
+<td align="left">O diretório atual.</td>
+</tr>
+<tr>
+<td align="left"><code class="language-text">$RANDOM</code></td>
+<td align="left">Número inteiro randômico entre 0 e 32767.</td>
+</tr>
+<tr>
+<td align="left"><code class="language-text">$UID</code></td>
+<td align="left">Versão numérica do ID do usuário atual.</td>
+</tr>
+<tr>
+<td align="left"><code class="language-text">$PS1</code></td>
+<td align="left">Sequência primária do seu prompt de comando.</td>
+</tr>
+<tr>
+<td align="left"><code class="language-text">$PS2</code></td>
+<td align="left">Sequência secundária do seu prompt de comando.</td>
+</tr>
+</tbody>
+</table>
+<p>Entre <a href="http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_02.html#sect_03_02_04" target="_blank" rel="nofollow noopener noreferrer">nesse link</a> para ver uma lista extendida de variáveis de ambiente do Bash.</p>
+<h2>Parâmetros de posição</h2>
+<p><strong>Parâmetros de posição</strong> são variáveis alocadas aos parâmetros de uma função quando ela é executada. A seguinte tabela mostra os parâmetros de posição e outras variáveis especiais e quais os seus significados dentro da função.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Parâmetro</th>
+<th align="left">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code class="language-text">$0</code></td>
+<td align="left">Nome do script.</td>
+</tr>
+<tr>
+<td align="left"><code class="language-text">$1 … $9</code></td>
+<td align="left">Os parâmetros passados de 1 há 9.</td>
+</tr>
+<tr>
+<td align="left"><code class="language-text">${10} … ${N}</code></td>
+<td align="left">Os parâmetros passados de 10 há N.</td>
+</tr>
+<tr>
+<td align="left"><code class="language-text">$*</code> or <code class="language-text">$@</code></td>
+<td align="left">Todos os parâmetros passados, exceto <code class="language-text">$0</code>.</td>
+</tr>
+<tr>
+<td align="left"><code class="language-text">$#</code></td>
+<td align="left">A soma da quantidade de parâmetros foi passada, não contando <code class="language-text">$0</code>.</td>
+</tr>
+<tr>
+<td align="left"><code class="language-text">$FUNCNAME</code></td>
+<td align="left">O nome da função (retornada como valor, apenas dentro da função).</td>
+</tr>
+</tbody>
+</table>
+<p>No exemplo abaixo, os parâmetros posicinais serão <code class="language-text">$0=&#39;./script.sh&#39;</code>,  <code class="language-text">$1=&#39;foo&#39;</code> e <code class="language-text">$2=&#39;bar&#39;</code>:</p>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">./script.sh foo bar</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<p>Variáveis também podem ter um valor <em>padrão</em>. Nós podemos definir isso usando a sintaxe:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"> <span class="token comment"># se a variável estiver vazia, atribua o valor padrão</span>
+<span class="token builtin class-name">:</span> <span class="token variable">${VAR<span class="token operator">:=</span>'default'}</span>
+<span class="token builtin class-name">:</span> <span class="token variable">${$1<span class="token operator">:=</span>'first'}</span>
+<span class="token comment"># ou</span>
+<span class="token assign-left variable">FOO</span><span class="token operator">=</span><span class="token variable">${FOO<span class="token operator">:-</span>'default'}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<h1>Expansões do shell</h1>
+<p><em>Expansões</em> são realizadas na linha de comando após ela ser separada em <em>símbolos</em>. Em outras palavras, expansões são mecânismos para calcular operações aritméticas, salvar resultados de execuções de comandos e assim por diante.</p>
+<p>Se você estiver interessado, você pode ler <a href="https://www.gnu.org/software/bash/manual/bash.html#Shell-Expansions" target="_blank" rel="nofollow noopener noreferrer">mais sobre expansões do shell</a>.</p>
+<h2>Expansões de suporte</h2>
+<p>Expansões de suporte nos permite criar <em>strings</em> arbitrárias. É parecido com <em>expansão de nomes de arquivos</em>. Por exemplo:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token builtin class-name">echo</span> bat<span class="token punctuation">{</span>i,a,u<span class="token punctuation">}</span>ta <span class="token comment"># batita batata batuta</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<p>Expansões também podem ser usadas para criar extensões numéricas, que podem ser iterados em um <em>loop</em>.</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token builtin class-name">echo</span> <span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">..</span><span class="token number">5</span><span class="token punctuation">}</span> <span class="token comment"># 0 1 2 3 4 5</span>
+<span class="token builtin class-name">echo</span> <span class="token punctuation">{</span>00<span class="token punctuation">..</span><span class="token number">8</span><span class="token punctuation">..</span><span class="token number">2</span><span class="token punctuation">}</span> <span class="token comment"># 00 02 04 06 08</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<h2>Substituição de comandos</h2>
+<p>Substituição de comandos nos permite avaliar um comando e substituir seus valores em outro comando ou atribuição de variável. Substituição de comandos é realizado quando um comando é anexado por <code class="language-text">``</code> ou <code class="language-text">$()</code>.  Por exemplo, podemos usar isso da seguinte maneira:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token assign-left variable">now</span><span class="token operator">=</span><span class="token variable"><span class="token variable">`</span><span class="token function">date</span> +%T<span class="token variable">`</span></span> <span class="token comment"># horário atual</span>
+<span class="token comment"># ou</span>
+<span class="token assign-left variable">now</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">date</span> +%T<span class="token variable">)</span></span> <span class="token comment"># horário atual</span>
+
+<span class="token builtin class-name">echo</span> <span class="token variable">$now</span> <span class="token comment"># 19:08:26</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<h2>Expansões aritiméticas</h2>
+<p>No bash, somos livres para fazer qualquer operação aritmética. Mas, expressões devem ser anexadas por <code class="language-text">$(( ))</code>. O formato da operação aritmética é:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token assign-left variable">result</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$((</span> <span class="token punctuation">((</span><span class="token number">10</span> <span class="token operator">+</span> <span class="token number">5</span><span class="token operator">*</span><span class="token number">3</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">7</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span> <span class="token variable">))</span></span>
+<span class="token builtin class-name">echo</span> <span class="token variable">$result</span> <span class="token comment"># 9</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<p>Dentro de expressões aritméticas, variáveis geralmente deverm ser usadas sem o prefixo <code class="language-text">$</code>:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token assign-left variable">x</span><span class="token operator">=</span><span class="token number">4</span>
+<span class="token assign-left variable">y</span><span class="token operator">=</span><span class="token number">7</span>
+<span class="token builtin class-name">echo</span> <span class="token variable"><span class="token variable">$((</span> x <span class="token operator">+</span> y <span class="token variable">))</span></span>     <span class="token comment"># 11</span>
+<span class="token builtin class-name">echo</span> <span class="token variable"><span class="token variable">$((</span> <span class="token operator">++</span>x <span class="token operator">+</span> y<span class="token operator">++</span> <span class="token variable">))</span></span> <span class="token comment"># 12</span>
+<span class="token builtin class-name">echo</span> <span class="token variable"><span class="token variable">$((</span> x <span class="token operator">+</span> y <span class="token variable">))</span></span>     <span class="token comment"># 13</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<h2>Aspas simples e duplas</h2>
+<p>Existe uma importante diferença entre aspas simples e duplas. Dentro das aspas duplas, variáveis ou comandos podem ser expandidos. Dentro de aspas simples não. Por exemplo:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token builtin class-name">echo</span> <span class="token string">"Seu diretório inicial: <span class="token environment constant">$HOME</span>"</span> <span class="token comment"># Seu diretório inicial: /Users/&lt;username></span>
+<span class="token builtin class-name">echo</span> <span class="token string">'Seu diretório inicial: <span class="token environment constant">$HOME</span>'</span> <span class="token comment"># Seu diretório inicial: $HOME</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<p>Tome cuidado ao expandir variáveis locais ou de ambiente dentro de aspas se eles contiverem espaços em branco. Um exemplo disso, considere o uso do <code class="language-text">echo</code> para imprimir algo:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token assign-left variable">INPUT</span><span class="token operator">=</span><span class="token string">"Uma frase  com   estranhos    espaços em branco."</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">$INPUT</span>   <span class="token comment"># Uma frase com estranhos espaços em branco.</span>
+<span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$INPUT</span>"</span> <span class="token comment"># Uma frase  com   estranhos    espaços em branco.</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span></span></pre></div>
+<p>O primeiro <code class="language-text">echo</code> será invocado com 7 argumentos separados - $INPUT é separado em cada palavra, <code class="language-text">echo</code> imprimi um único espaço em branco entre cada palavra. No segundo caso, <code class="language-text">echo</code> é invocado com um único argumento (todo o valor do $INPUT, includingo seus espaços em branco).</p>
+<p>Agora, considere um exemplo mais sério:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token assign-left variable">FILE</span><span class="token operator">=</span><span class="token string">"Minhas coisas favoritas.txt"</span>
+<span class="token function">cat</span> <span class="token variable">$FILE</span>   <span class="token comment"># tentará imprimir 3 arquivos: `Minhas`, `coisas` e `favoritas.txt`</span>
+<span class="token function">cat</span> <span class="token string">"<span class="token variable">$FILE</span>"</span> <span class="token comment"># imprimi 1 arquivo: `Minhas coisas favoritas.txt`</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span></span></pre></div>
+<p>Enquanto o problema desse exemplo pode ser resolvido apenas renomeando FILE para <code class="language-text">Minhas-coisas-favoritas.txt</code>, considere a entrada do nome vindo de uma variável de ambiente, um parâmetro posicional ou o resultado de outro comando (<code class="language-text">find</code>, <code class="language-text">cat</code>, etc). Se a entrada <em>puder</em> conter espaços em branco, tome o cuidado de envolver a expansão em aspas.</p>
+<h1>Arrays</h1>
+<p>Como em qualquer outra linguagem de programação, um array no bash é uma variável que permite o armazenamento de múltiplos valores. No bash, arrays também são de base zero, ou seja, o primeiro elemento do array tem o íncide 0.</p>
+<p>Ao lidar com arrays, nós devemos tomar um cuidado especial com as variáveis de ambiente <code class="language-text">IFS</code>. <strong>IFS</strong>, que significa <strong>Input Field Separator</strong>, em português, algo como, <strong>Separador dos campos de entrada</strong>, são os carácteres que separam os elementos dentro de um array. O valor padrão desses campos é um espaço em braco, <code class="language-text">IFS=&#39; &#39;</code>.</p>
+<h2>Declarando array</h2>
+<p>Para criar um array no bash, você pode simplesmente atribuir o valor ao index da variável do array:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash">frutas<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">=</span>Maça
+frutas<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">=</span>Pera
+frutas<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token operator">=</span>Banana</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span></span></pre></div>
+<p>As variáveis de arrays também podem ser criadas a partir de uma atribuição composta, como:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token assign-left variable">frutas</span><span class="token operator">=</span><span class="token punctuation">(</span>Maça Pera Banana<span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<h2>Expansões de Array</h2>
+<p>Elementos individuais do array, são igualmente expansíveis como qualquer outra variável:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token builtin class-name">echo</span> <span class="token variable">${frutas<span class="token punctuation">[</span>1<span class="token punctuation">]</span>}</span> <span class="token comment"># Pera</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<p>Todo o array pode ser expansível usando <code class="language-text">*</code> ou <code class="language-text">@</code> no lugar do índice numérico:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token builtin class-name">echo</span> <span class="token variable">${frutas<span class="token punctuation">[</span>*<span class="token punctuation">]</span>}</span> <span class="token comment"># Maça Pera Banana</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">${frutas<span class="token punctuation">[</span>@<span class="token punctuation">]</span>}</span> <span class="token comment"># Maça Pera Banana</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<p>Tem uma importante (e súbita) diferença entre as duas linhas acima: considere que um elemento do array tenha espaços em branco:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash">fruta<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">=</span>Maça
+fruta<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token string">"Mamão papaia"</span>
+fruta<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token operator">=</span>Banana</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span></span></pre></div>
+<p>Nós queremos imprimir cada elemento do array separadamente em uma nova linha, então, vamos tentar usar a função nativa <code class="language-text">printf</code>:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token builtin class-name">printf</span> <span class="token string">"+ %s<span class="token entity" title="\n">\n</span>"</span> <span class="token variable">${frutas<span class="token punctuation">[</span>*<span class="token punctuation">]</span>}</span>
+<span class="token comment"># + Maça</span>
+<span class="token comment"># + Mamão</span>
+<span class="token comment"># + papaia</span>
+<span class="token comment"># + Banana</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>Porque o <code class="language-text">Mamão</code> e <code class="language-text">papaia</code> foram imprimidos em linhas separadas? Vamos tentar usando aspas:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token builtin class-name">printf</span> <span class="token string">"+ %s<span class="token entity" title="\n">\n</span>"</span> <span class="token string">"<span class="token variable">${frutas<span class="token punctuation">[</span>*<span class="token punctuation">]</span>}</span>"</span>
+<span class="token comment"># + Maça Mamão papaia Banana</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<p>Agora, está tudo em uma linha só - isso não exatamente o que queremos! É aí que <code class="language-text">${frutas[@]}</code> entra no jogo:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token builtin class-name">printf</span> <span class="token string">"+ %s<span class="token entity" title="\n">\n</span>"</span> <span class="token string">"<span class="token variable">${frutas<span class="token punctuation">[</span>@<span class="token punctuation">]</span>}</span>"</span>
+<span class="token comment"># + Maça</span>
+<span class="token comment"># + Mamão papaia</span>
+<span class="token comment"># + Banana</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span></span></pre></div>
+<p>Dentro das aspas duplas, <code class="language-text">${frutas[@]}</code> é expandido separadamente para cada elemento do array, com seus espaços em branco preservados.</p>
+<h2>Separando Array</h2>
+<p>Além disso, você pode extrair um pedaço do array usando os operadores:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token builtin class-name">echo</span> <span class="token variable">${frutas<span class="token punctuation">[</span>@<span class="token punctuation">]</span><span class="token operator">:</span>0<span class="token operator">:</span>2}</span> <span class="token comment"># Maça Mamão papaia</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<p>No exemplo acima, <code class="language-text">${frutas[@]}</code> é expandido com todo o conteúdo do seu array, e <code class="language-text">:0:2</code>, extraí o pedaço de tamanho 2, começando no índice 0.</p>
+<h2>Adicionando elementos no Array</h2>
+<p>Adicionar elementos no array é bem simples. Atribuições compostas são extremamente úteis nesse caso. Você pode fazer uso dessa maneira:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token assign-left variable">frutas</span><span class="token operator">=</span><span class="token punctuation">(</span>Laranja <span class="token string">"<span class="token variable">${frutas<span class="token punctuation">[</span>@<span class="token punctuation">]</span>}</span>"</span> Melão Ameixa<span class="token punctuation">)</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">${frutas<span class="token punctuation">[</span>@<span class="token punctuation">]</span>}</span> <span class="token comment"># Laranja Maça Mamão papaia Banana Melão Ameixa</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<p>No exemplo acima, <code class="language-text">${frutas[@]}</code> é expandido com todo o conteúdo do seu array e é atribuido ao novo valor dentro do array <code class="language-text">frutas</code>, sendo assim, mutando seu valor original.</p>
+<h2>Deletando elementos de um Array</h2>
+<p>Para deletar um elemento de um array, use o comando <code class="language-text">unset</code>:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token builtin class-name">unset</span> frutas<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token comment"># Deleta o item Laranja</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">${frutas<span class="token punctuation">[</span>@<span class="token punctuation">]</span>}</span> <span class="token comment"># Maça Mamão papaia Banana Melão Ameixa</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<h1>Streams, pipes e listas</h1>
+<p>Bash tem uma poderosa ferramente para trabalhar com outros programas e seus resultados. Usando <em>streams</em> nós podemos enviar o resultado de um programa para outro programa ou arquivo, e assim, gravar logs ou fazer qualquer coisa que quisermos.</p>
+<p><em>Pipes</em> te dá a oportunidade de transportar e controlar a execução de comandos.</p>
+<p>É fundamental o entendimento de como usar essa poderosa e sofisticada ferramenta do Bash.</p>
+<h2>Streams</h2>
+<p>Ao executar qualquer comando no Bash, ele recebe esses dados como parâmetros e envia uma sequência ou <em>streams</em> de caracteres. Esses <em>streams</em> podem ser redirecionados em arquivos ou em outro <em>stream</em>.</p>
+<p>Existem três tipos de saídas de dados, conhecidos como <em>descritores</em>:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Código</th>
+<th align="center">Descritor</th>
+<th align="left">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code class="language-text">0</code></td>
+<td align="center"><code class="language-text">stdin</code></td>
+<td align="left">O padrão de entrada de dados.</td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">1</code></td>
+<td align="center"><code class="language-text">stdout</code></td>
+<td align="left">O padrão de saída de dados.</td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">2</code></td>
+<td align="center"><code class="language-text">stderr</code></td>
+<td align="left">O padrão de saída de erros.</td>
+</tr>
+</tbody>
+</table>
+<p>Redirecionamento torna possível o controle de onde a saída do comando vai parar, e, de onde a entrada de dados veem. Para redirecionar <em>streams</em>, você pode usar esses operadores:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Operadores</th>
+<th align="left">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code class="language-text">&gt;</code></td>
+<td align="left">Redireciona a saída de dados</td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">&amp;&gt;</code></td>
+<td align="left">Redireciona a saída de dados e de erros</td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">&amp;&gt;&gt;</code></td>
+<td align="left">Anexa o redirecionamento de saída e erros</td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">&lt;</code></td>
+<td align="left">Redireciona a entrada de dados</td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">&lt;&lt;</code></td>
+<td align="left">Sintaxe do comando <a href="http://tldp.org/LDP/abs/html/here-docs.html" target="_blank" rel="nofollow noopener noreferrer">“Here documents”</a></td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">&lt;&lt;&lt;</code></td>
+<td align="left">Sintaxe do comando <a href="http://www.tldp.org/LDP/abs/html/x17837.html" target="_blank" rel="nofollow noopener noreferrer">“Here strings”</a></td>
+</tr>
+</tbody>
+</table>
+<p>Veja aqui alguns exemplos de redirecionamento:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token comment"># a saída do comando `ls` será escrita no arquivo lista.txt</span>
+<span class="token function">ls</span> -l <span class="token operator">></span> lista.txt
+
+<span class="token comment"># adiciona a saída do comando no final do arquivo lista.txt</span>
+<span class="token function">ls</span> -a <span class="token operator">>></span> lista.txt
+
+<span class="token comment"># todos os erros serão escritos no arquivo erros.txt</span>
+<span class="token function">grep</span> da * <span class="token operator"><span class="token file-descriptor important">2</span>></span> erros.txt
+
+<span class="token comment"># lê o arquivo erros.txt</span>
+<span class="token function">less</span> <span class="token operator">&lt;</span> errors.txt</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<h2>Pipes</h2>
+<p>Nós podemos redirecionar os <em>streams</em> padrões não apenas para arquivos, mas também, para outros programas. <strong>Pipes</strong> nos permite usar a saída de um programa, como entrada de outro.</p>
+<p>No exemplo abaixo, <code class="language-text">comando1</code> envia sua saída para <code class="language-text">comando2</code>, que então passa sua saída como entrada para <code class="language-text">comando3</code>:</p>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">comando1 | comando2 | comando3</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<p>Construções como essa, são chamadas de <strong>pipelines</strong>.</p>
+<p>Na prática, isso pode ser usado para processar dados através de vários programas. Por exemplo, no exemplo a seguir, a saída do <code class="language-text">ls -l</code> é enviada para o comando <code class="language-text">grep</code>, que então imprimi apenas os arquivos que tenham a extensão <code class="language-text">.md</code>, e sua saída, é finalmente enviada para o comando <code class="language-text">less</code>:</p>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">ls -l | grep .md$ | less</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<h2>Lista de comandos</h2>
+<p>Uma <strong>lista de comandos</strong> é uma sequência de um ou mais <em>pipelines</em> separados pelos operadores <code class="language-text">;</code>, <code class="language-text">&amp;</code>, <code class="language-text">&amp;&amp;</code> ou <code class="language-text">||</code>.</p>
+<p>Se um comando termina com um operador <code class="language-text">&amp;</code>, o shell executará o comando asíncronamente através de um <em>subshell</em>. Em outras palavras, esse comando será executado em segundo plano (ou <em>background</em>).</p>
+<p>Comandos separados por <code class="language-text">;</code> serão executados em sequência: um após o outro. O shell esperada a finalização de cada comando para executar o próximo.</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token comment"># comando1 será executado após a finalização do comando1</span>
+comando1 <span class="token punctuation">;</span> comando2
+
+<span class="token comment"># que é o mesmo que</span>
+command1
+command2</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>Uma lista separada por <code class="language-text">&amp;&amp;</code> e <code class="language-text">||</code> são conhecidos também como listas <em>AND</em> e <em>OR</em>,</p>
+<p>Uma lista <em>AND</em> é parecida com isso:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token comment"># comando2 será executado se, e apenas se, o comando1 finalize seu processo com sucesso (retorando um estado de saída 0)</span>
+comando1 <span class="token operator">&amp;&amp;</span> comando2</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<p>Uma lista <em>OR</em>  é parecida com isso:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token comment"># comando2 será executado se, e apenas se, o comando1 não finalize seu processo com sucesso (retornando um estado de saída não-zero)</span>
+comando1 <span class="token operator">||</span> comando2</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<p>O código retornado pelas listas <em>AND</em> ou <em>OR</em>, são o estado do último comando executado.</p>
+<h1>Operadores condicionais</h1>
+<p>Como em qualquer outra linguagem, as condicionais no Bash nos permitem decidir qual ação realizar. O resultado é determinado pela análise da expressão, que deverá ser conter <code class="language-text">[[ ]]</code> em volta dela.</p>
+<p>Expressões condicionais podem conter os operadores <code class="language-text">&amp;&amp;</code> e <code class="language-text">||</code>, como vimos, <em>AND</em> e <em>OR</em>. Além disso, existem <a href="#express%C3%B5es-prim%C3%A1rias-e-combina%C3%A7%C3%A3o-de-express%C3%B5es">várias outras expressões</a> que podem ser utilizadas.</p>
+<p>Existem duas condicionais diferentes: a condicional <code class="language-text">if</code>, e a condicional <code class="language-text">case</code>.</p>
+<h2>Expressões primárias e combinação de expressões</h2>
+<p>Expressões dentro do <code class="language-text">[[ ]]</code> (ou <code class="language-text">[ ]</code> para <code class="language-text">sh</code>), são chamados de <strong>comandos de teste</strong> ou <strong>primários</strong>. Essas expressões ajudam a indicar o resultado de uma operação condicional. Nas tabelas abaixos, estamos usando <code class="language-text">[ ]</code>, porque ele também funciona para <code class="language-text">sh</code>. Para saber mais, <a href="http://serverfault.com/a/52050" target="_blank" rel="nofollow noopener noreferrer">veja aqui a diferença entre aspas simples e aspas duplas dentro dos colchetes no Bash.</a>.</p>
+<p><strong>Trabalhando com o sistema de arquivos:</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">Primários</th>
+<th align="left">Quer dizer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code class="language-text">[ -e FILE ]</code></td>
+<td align="left"><em>true</em> se <code class="language-text">FILE</code> existir, do inglês <em><strong>e</strong>xists</em>.</td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">[ -f FILE ]</code></td>
+<td align="left"><em>true</em> se <code class="language-text">FILE</code> existir e for um arquivo normal, do inglês <em><strong>f</strong>ile</em>.</td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">[ -d FILE ]</code></td>
+<td align="left"><em>true</em> se <code class="language-text">FILE</code> existir e for executável, do inglês <em><strong>d</strong>irectory</em>.</td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">[ -s FILE ]</code></td>
+<td align="left"><em>true</em> se <code class="language-text">FILE</code> existir e não for vazio, seu tamanho é maior que 0, do inglês <em><strong>s</strong>ize</em>.</td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">[ -r FILE ]</code></td>
+<td align="left"><em>true</em> se <code class="language-text">FILE</code> existir e for possível a leitura, do inglês <em><strong>r</strong>eadable</em>.</td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">[ -w FILE ]</code></td>
+<td align="left"><em>true</em> se <code class="language-text">FILE</code> existir e for possível a escrita, do inglês <em><strong>w</strong>ritable</em>.</td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">[ -x FILE ]</code></td>
+<td align="left"><em>true</em> se <code class="language-text">FILE</code> existir e for possíve executá-lo, do inglês <em>e<strong>x</strong>ecutable</em>.</td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">[ -L FILE ]</code></td>
+<td align="left"><em>true</em> se <code class="language-text">FILE</code> existir e for um link simbólico, do inglês <em>symbolic <strong>l</strong>ink</em>.</td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">[ FILE1 -nt FILE2 ]</code></td>
+<td align="left">FILE1 é mais novo que FILE2, do inglês <em><strong>n</strong>ewer <strong>t</strong>han</em>.</td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">[ FILE1 -ot FILE2 ]</code></td>
+<td align="left">FILE1 é mais velho que FILE2, do inglês <em><strong>o</strong>lder <strong>t</strong>han</em>.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Trabalhando com <em>strings</em>:</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">Primários</th>
+<th align="left">Quer dizer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code class="language-text">[ -z STR ]</code></td>
+<td align="left"><code class="language-text">STR</code> é vazio, seu tamanho é zero, do inglês <em><strong>z</strong>ero</em>.</td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">[ -n STR ]</code></td>
+<td align="left"><code class="language-text">STR</code> não é vazio, seu tamanho não é zero, do inglês <em><strong>n</strong>on-zero</em>.</td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">[ STR1 == STR2 ]</code></td>
+<td align="left"><code class="language-text">STR1</code> e <code class="language-text">STR2</code> são iguais.</td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">[ STR1 != STR2 ]</code></td>
+<td align="left"><code class="language-text">STR1</code> e <code class="language-text">STR2</code> não são iguais.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Operadores aritiméticos binários:</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">Primários</th>
+<th align="left">Quer dizer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code class="language-text">[ ARG1 -eq ARG2 ]</code></td>
+<td align="left"><code class="language-text">ARG1</code> é igual ao <code class="language-text">ARG2</code>, do inglês <em><strong>eq</strong>ual</em>.</td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">[ ARG1 -ne ARG2 ]</code></td>
+<td align="left"><code class="language-text">ARG1</code> não é igual ao <code class="language-text">ARG2</code>, do inglês <em><strong>n</strong>ot <strong>e</strong>qual</em>.</td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">[ ARG1 -lt ARG2 ]</code></td>
+<td align="left"><code class="language-text">ARG1</code> é menor que <code class="language-text">ARG2</code>, do inglês <em><strong>l</strong>ess <strong>t</strong>han</em>.</td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">[ ARG1 -le ARG2 ]</code></td>
+<td align="left"><code class="language-text">ARG1</code> é menor ou igual que <code class="language-text">ARG2</code>, do inglês <em><strong>l</strong>ess than or <strong>e</strong>qual</em>.</td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">[ ARG1 -gt ARG2 ]</code></td>
+<td align="left"><code class="language-text">ARG1</code> é maior que <code class="language-text">ARG2</code>, do inglês <em><strong>g</strong>reater <strong>t</strong>han</em>.</td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">[ ARG1 -ge ARG2 ]</code></td>
+<td align="left"><code class="language-text">ARG1</code> é maior ou igual que <code class="language-text">ARG2</code> <em><strong>g</strong>reater than or <strong>e</strong>qual</em>.</td>
+</tr>
+</tbody>
+</table>
+<p>Condicionais podem ser combinadas usando as <strong>expressões de combinação:</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">Expressão</th>
+<th align="left">Efeito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code class="language-text">[ ! EXPR ]</code></td>
+<td align="left"><em>true</em> se <code class="language-text">EXPR</code> é falso.</td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">[ (EXPR) ]</code></td>
+<td align="left">Retorna o valor da <code class="language-text">EXPR</code>.</td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">[ EXPR1 -a EXPR2 ]</code></td>
+<td align="left">Operador lógico <em>AND</em>. <em>true</em> se <code class="language-text">EXPR1</code> e <code class="language-text">EXPR2</code> são verdadeiros, do inglês <em><strong>a</strong>nd</em>.</td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">[ EXPR1 -o EXPR2 ]</code></td>
+<td align="left">Operador lógico <em>OR</em>. <em>true</em> se <code class="language-text">EXPR1</code> ou <code class="language-text">EXPR2</code> são verdadeiros, do inglês <em><strong>o</strong>r</em>.</td>
+</tr>
+</tbody>
+</table>
+<p>Com certeza existem muitos outros comandos e expressões úteis para seu caso, você fácilmente encontra-los na <a href="http://www.gnu.org/software/bash/manual/html_node/Bash-Conditional-Expressions.html" target="_blank" rel="nofollow noopener noreferrer">página de manual do Bash</a>.</p>
+<h2>Usando a condicional <code class="language-text">if</code></h2>
+<p>Declarações <code class="language-text">if</code> funcionam da mesma maneira como em outras linguagens de programação. Se a expressão dentro dos colchetes for verdadeira, o codógio dentro do bloco <code class="language-text">then</code> e até o <code class="language-text">fi</code> será executado. <code class="language-text">fi</code> indica o final de uma condicional a ser executada.</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token comment"># única linha</span>
+<span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token number">1</span> -eq <span class="token number">1</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span> <span class="token builtin class-name">echo</span> <span class="token string">"true"</span><span class="token punctuation">;</span> <span class="token keyword">fi</span>
+
+<span class="token comment"># múltipla linha</span>
+<span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token number">1</span> -eq <span class="token number">1</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+  <span class="token builtin class-name">echo</span> <span class="token string">"true"</span>
+<span class="token keyword">fi</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>Da mesma forma, podemos usar uma declaração <code class="language-text">if..else</code>, como:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token comment"># única linha</span>
+<span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token number">2</span> -ne <span class="token number">1</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span> <span class="token builtin class-name">echo</span> <span class="token string">"true"</span><span class="token punctuation">;</span> <span class="token keyword">else</span> <span class="token builtin class-name">echo</span> <span class="token string">"false"</span><span class="token punctuation">;</span> <span class="token keyword">fi</span>
+
+<span class="token comment"># múltipla linha</span>
+<span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token number">2</span> -ne <span class="token number">1</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+  <span class="token builtin class-name">echo</span> <span class="token string">"true"</span>
+<span class="token keyword">else</span>
+  <span class="token builtin class-name">echo</span> <span class="token string">"false"</span>
+<span class="token keyword">fi</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>As vezes, condicionais <code class="language-text">if..else</code> não são suficientes para o que queremos fazer. Nesse caso, não devemos esquecer da existência da condicional <code class="language-text">if..elif..else</code>, que sempre vêm a calhar.</p>
+<p>Veja o exemplo abaixo:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token variable"><span class="token variable">`</span><span class="token function">uname</span><span class="token variable">`</span></span> <span class="token operator">==</span> <span class="token string">"Adão"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+  <span class="token builtin class-name">echo</span> <span class="token string">"Não coma a maça!"</span>
+<span class="token keyword">elif</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token variable"><span class="token variable">`</span><span class="token function">uname</span><span class="token variable">`</span></span> <span class="token operator">==</span> <span class="token string">"Eva"</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+  <span class="token builtin class-name">echo</span> <span class="token string">"Não pegue a maça!"</span>
+<span class="token keyword">else</span>
+  <span class="token builtin class-name">echo</span> <span class="token string">"Maças são deliciosas!"</span>
+<span class="token keyword">fi</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<h2>Usando a condicional <code class="language-text">case</code></h2>
+<p>Se você estiver analisando várias possibilidades diferentes para ter ações diferentes, usar a condicional <code class="language-text">case</code> pode ser mais útil do que várias condicionais <code class="language-text">if</code> aninhadas. Veja abaixo um exemplo complexo de usando a condicional <code class="language-text">case</code>:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token keyword">case</span> <span class="token string">"<span class="token variable">$ext</span>"</span> <span class="token keyword">in</span>
+  <span class="token string">"jpg"</span><span class="token operator">|</span><span class="token string">"jpeg"</span><span class="token punctuation">)</span>
+    <span class="token builtin class-name">echo</span> <span class="token string">"É uma imagem com extensão jpg"</span>
+  <span class="token punctuation">;</span><span class="token punctuation">;</span>
+  <span class="token string">"png"</span><span class="token punctuation">)</span>
+    <span class="token builtin class-name">echo</span> <span class="token string">"É uma imagem com extensão png"</span>
+  <span class="token punctuation">;</span><span class="token punctuation">;</span>
+  <span class="token string">"gif"</span><span class="token punctuation">)</span>
+    <span class="token builtin class-name">echo</span> <span class="token string">"É uma imagem com extensão gif"</span>
+  <span class="token punctuation">;</span><span class="token punctuation">;</span>
+  *<span class="token punctuation">)</span>
+    <span class="token builtin class-name">echo</span> <span class="token string">"Oops! Não é uma imagem!"</span>
+  <span class="token punctuation">;</span><span class="token punctuation">;</span>
+<span class="token keyword">esac</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>A condicional <code class="language-text">case</code> verifica a expressão que corresponde a um padrão. O sinal <code class="language-text">|</code> é usado para separar múltiplos padrões e o operador <code class="language-text">)</code> finaliza a lista de padrões. A expressão <code class="language-text">*</code> é o padrão para todo o restante que não corresponder a nenhum item das suas listas. Cada bloco de comandos deve ser separado pelo operador <code class="language-text">;;</code>.</p>
+<h1>Loops</h1>
+<p>Aqui não teremos nenhuma surpresa. Assim como qualquer linguagem de programação, um loop no bash é um bloco de código que se repete enquanto a condição em controle for verdadeira.</p>
+<p>Existem quatro tipos de loops no Bash: <code class="language-text">for</code>, <code class="language-text">while</code>, <code class="language-text">until</code> e <code class="language-text">select</code>.</p>
+<h2><code class="language-text">for</code> loop</h2>
+<p>O <code class="language-text">for</code> é bem similar ao seu irmão em C. Ele se parece com:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token keyword">for</span> <span class="token for-or-select variable">arg</span> <span class="token keyword">in</span> elem1 elem2 <span class="token punctuation">..</span>. elemN
+<span class="token keyword">do</span>
+  <span class="token comment"># código</span>
+<span class="token keyword">done</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span></span></pre></div>
+<p>Durante cada etapa do loop, <code class="language-text">arg</code> assume os valores de <code class="language-text">elem1</code> até <code class="language-text">elemN</code>. Valores também podem ser espaços reservados ou <a href="#expans%C3%B5es-de-suporte">expansões de suporte</a>.</p>
+<p>E também podemos escrever o loop <code class="language-text">for</code> em apenas uma linha, mas nesse caso, é preciso colocar um ponto e vírgula antes do <code class="language-text">do</code>, como no exemplo:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token keyword">for</span> <span class="token for-or-select variable">i</span> <span class="token keyword">in</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">..</span><span class="token number">5</span><span class="token punctuation">}</span><span class="token punctuation">;</span> <span class="token keyword">do</span> <span class="token builtin class-name">echo</span> <span class="token variable">$i</span><span class="token punctuation">;</span> <span class="token keyword">done</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<p>A propósito, se <code class="language-text">for..in..do</code> parece um pouco estranho para você, você também pode escrever o <code class="language-text">for</code> em estilo C, como a seguir:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span> <span class="token punctuation">))</span></span><span class="token punctuation">;</span> <span class="token keyword">do</span>
+  <span class="token builtin class-name">echo</span> <span class="token variable">$i</span>
+<span class="token keyword">done</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span></span></pre></div>
+<p><code class="language-text">for</code> é útil quando nós queremos fazer a mesma operação em cada arquivo em um diretório. Por exemplo, se precisamos mover todos os arquivos <code class="language-text">.bash</code> dentro da pasta <code class="language-text">script</code> e dar aos arquivos permissões de execução, nosso script será parecido com isso:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
+
+<span class="token keyword">for</span> <span class="token for-or-select variable">FILE</span> <span class="token keyword">in</span> <span class="token environment constant">$HOME</span>/*.bash<span class="token punctuation">;</span> <span class="token keyword">do</span>
+  <span class="token function">mv</span> <span class="token string">"<span class="token variable">$FILE</span>"</span> <span class="token string">"<span class="token variable">${<span class="token environment constant">HOME</span>}</span>/scripts"</span>
+  <span class="token function">chmod</span> +x <span class="token string">"<span class="token variable">${<span class="token environment constant">HOME</span>}</span>/scripts/<span class="token variable">${FILE}</span>"</span>
+<span class="token keyword">done</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<h2><code class="language-text">while</code> loop</h2>
+<p>O loop <code class="language-text">while</code> testa uma condição e executa a sequência de comandos desde que a condição seja verdadeira. A condição não é nada mais que uma <a href="#express%C3%B5es-prim%C3%A1rias-e-combina%C3%A7%C3%A3o-de-express%C3%B5es">expressão primária</a> usada também em <code class="language-text">if..then</code>. Então, um loop <code class="language-text">while</code> se parece com:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token keyword">while</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> condition <span class="token punctuation">]</span><span class="token punctuation">]</span>
+<span class="token keyword">do</span>
+  <span class="token comment"># código</span>
+<span class="token keyword">done</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span></span></pre></div>
+<p>Tal como no caso do loop <code class="language-text">for</code>, se quisermos escrever uma condição <code class="language-text">do</code> na mesma linha, temos que usar um ponto e vírgula antes.</p>
+<p>Um exemplo prático seria:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
+
+  <span class="token comment"># Retorna o quadrado dos números de 0 à 9</span>
+<span class="token assign-left variable">x</span><span class="token operator">=</span><span class="token number">0</span>
+<span class="token keyword">while</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token variable">$x</span> -lt <span class="token number">10</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">do</span> <span class="token comment"># valor de x é menor que 10</span>
+  <span class="token builtin class-name">echo</span> <span class="token variable"><span class="token variable">$((</span> x <span class="token operator">*</span> x <span class="token variable">))</span></span>
+  <span class="token assign-left variable">x</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$((</span> x <span class="token operator">+</span> <span class="token number">1</span> <span class="token variable">))</span></span> <span class="token comment"># aumenta o x</span>
+<span class="token keyword">done</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<h2><code class="language-text">until</code> loop</h2>
+<p>O loop <code class="language-text">until</code> é exatamente o oposto do loop <code class="language-text">while</code>. Assim como o <code class="language-text">while</code>, ele recebe uma condição teste, mas, só continua executando enquanto a condição for falsa:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token keyword">until</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> cond <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">do</span>
+  <span class="token comment"># código</span>
+<span class="token keyword">done</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span></span></pre></div>
+<h2><code class="language-text">select</code> loop</h2>
+<p>O loop <code class="language-text">select</code> nos ajuda a organizar um menu para o usuário. Ele tem quase a mesma sintaxe que o loop <code class="language-text">for</code>:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token keyword">select</span> <span class="token for-or-select variable">respostas</span> <span class="token keyword">in</span> elem1 elem2 <span class="token punctuation">..</span>. elemN
+<span class="token keyword">do</span>
+  <span class="token comment"># código</span>
+<span class="token keyword">done</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span></span></pre></div>
+<p>O <code class="language-text">select</code> imprimi todos os <code class="language-text">elem1..elemN</code> na tela, junto de suas sequências numéricas, e depois disso, pergunta ao usuário. Normalmente, isso se parece com <code class="language-text">$?</code> (a variável <code class="language-text">PS3</code>). A resposta será salva em <code class="language-text">respotas</code>. Se <code class="language-text">respostas</code> for um número entre <code class="language-text">1..N</code>, então o código será executado e <code class="language-text">select</code> vai para a próxima iteração - isso porquê nós devemos usar a declaração <code class="language-text">break</code>.</p>
+<p>Um exemplo prático se parece com esse:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
+
+<span class="token assign-left variable"><span class="token environment constant">PS3</span></span><span class="token operator">=</span><span class="token string">"Escolha uma gerenciador de pacotes: "</span>
+<span class="token keyword">select</span> <span class="token for-or-select variable">ITEM</span> <span class="token keyword">in</span> bower <span class="token function">npm</span> gem pip
+<span class="token keyword">do</span>
+  <span class="token builtin class-name">echo</span> -n <span class="token string">"Digite o nome de um de pacote: "</span> <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">read</span> PACKAGE
+  <span class="token keyword">case</span> <span class="token variable">$ITEM</span> <span class="token keyword">in</span>
+    bower<span class="token punctuation">)</span> bower <span class="token function">install</span> <span class="token variable">$PACKAGE</span> <span class="token punctuation">;</span><span class="token punctuation">;</span>
+    <span class="token function">npm</span><span class="token punctuation">)</span>   <span class="token function">npm</span>   <span class="token function">install</span> <span class="token variable">$PACKAGE</span> <span class="token punctuation">;</span><span class="token punctuation">;</span>
+    gem<span class="token punctuation">)</span>   gem   <span class="token function">install</span> <span class="token variable">$PACKAGE</span> <span class="token punctuation">;</span><span class="token punctuation">;</span>
+    pip<span class="token punctuation">)</span>   pip   <span class="token function">install</span> <span class="token variable">$PACKAGE</span> <span class="token punctuation">;</span><span class="token punctuation">;</span>
+  <span class="token keyword">esac</span>
+  <span class="token builtin class-name">break</span> <span class="token comment"># evita loops infinitos</span>
+<span class="token keyword">done</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>Esse example pergunta ao usuário qual gerenciador de pacote ele deseja usar. E em seguida, quais pacotes gostaríamos de instalar e finalmente, executa o processo de instalação.</p>
+<p>Se rodarmos isso, teremos:</p>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">$ ./my_script
+1) bower
+2) npm
+3) gem
+4) pip
+Escolha uma gerenciador de pacotes: 2
+Digite o nome de um de pacote: bash-handbook
+&lt;installing bash-handbook&gt;</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<h2>Controlando o loop</h2>
+<p>Existem situações onde precisamos parar o loop antes da sua finalização normal ou pular uma iteração. Nesses casos, nós podemos usar as declarações <code class="language-text">break</code> e <code class="language-text">continue</code>, que são nativas do shell. Ambos funcionam com qualquer tipo de loop.
+There are situations when we need to stop a loop before its normal ending or step over an iteration. In these cases, we can use the shell built-in <code class="language-text">break</code> and <code class="language-text">continue</code> statements. Both of these work with every kind of loop.</p>
+<p>A declaração <code class="language-text">break</code> é usada para sair do loop atual antes da sua finalização. Nós já o conhecemos.
+The <code class="language-text">break</code> statement is used to exit the current loop before its ending. We have already met with it.</p>
+<p>A delcaração <code class="language-text">continue</code> pula uma iteração. Podemos usa-la desse modo:
+The <code class="language-text">continue</code> statement steps over one iteration. We can use it as such:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span> <span class="token punctuation">))</span></span><span class="token punctuation">;</span> <span class="token keyword">do</span>
+  <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token variable"><span class="token variable">$((</span> i <span class="token operator">%</span> <span class="token number">2</span> <span class="token variable">))</span></span> -eq <span class="token number">0</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span> <span class="token builtin class-name">continue</span><span class="token punctuation">;</span> <span class="token keyword">fi</span>
+  <span class="token builtin class-name">echo</span> <span class="token variable">$i</span>
+<span class="token keyword">done</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span></span></pre></div>
+<p>Se você rodar o exemplo acima, ele vai imprimir os números ímpares de 0 à 9.
+If we run the example above, it will print all odd numbers from 0 through 9.</p>
+<h1>Funções</h1>
+<p>Em scripts, nós temos a habilidade de definir e chamar funções. Assim como em qualquer linguagem de programação, funções no bash são pedaços de códigos, mas elas são tratadas um pouquinho diferentes.</p>
+<p>No bash, funções são sequências de comandos agrupados sob um mesmo nome, e esse nome, é o nome da função. Chamar uma função é o mesmo que chamar qualquer outro programa, você escreve o nome da função e ela será invocada.</p>
+<p>Podemos declarar funções dessa maneira:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token function-name function">my_func</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment"># código</span>
+<span class="token punctuation">}</span>
+
+my_func <span class="token comment"># invoca função</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>Devemos declarar a função antes de invoca-la.</p>
+<p>Funções podem receber argumentos e retornar um resultado - o código de saída. Argumentos, em funções, são tratados da mesma maneira que os argumentos dados ao script no <a href="#modo-n%C3%A3o-interativo">modo não-interativo</a> - usando os <a href="#par%C3%A2metros-de-posi%C3%A7%C3%A3o">parâmetros de posição</a>. O resultado pode ser retornado usando o comando <code class="language-text">return</code>.</p>
+<p>Abaixo é uma função que recebe um nome e retorna <code class="language-text">0</code>, indicando que foi executado com sucesso.</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token comment"># function with params</span>
+<span class="token function-name function">bemVindo</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> -n <span class="token variable">$1</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+    <span class="token builtin class-name">echo</span> <span class="token string">"Bem-vindo, <span class="token variable">$1</span>!"</span>
+  <span class="token keyword">else</span>
+    <span class="token builtin class-name">echo</span> <span class="token string">"Bem-vindo, desconhecido!"</span>
+  <span class="token keyword">fi</span>
+  <span class="token builtin class-name">return</span> <span class="token number">0</span>
+<span class="token punctuation">}</span>
+
+bemVindo Eduardo  <span class="token comment"># Hello, Eduardo!</span>
+bemVindo        <span class="token comment"># Hello, desconhecido!</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>Nós já falamos sobre <a href="#c%C3%B3digos-de-sa%C3%ADda">códigos de saída</a>. O comando <code class="language-text">return</code> sem argumentos retorna o código de saída do último comando executado. Acima, <code class="language-text">return 0</code> vai retornar o código bem sucedido, <code class="language-text">0</code>.</p>
+<h2>Depurando</h2>
+<p>O shell nós dá ferramentas para depurar nossos scripts. Se você quer rodar um script em modo de depuração, nós usamos um modo especial em nosso <em>shebang</em>:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token shebang important">#!/bin/bash options</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<p>Esse <code class="language-text">options</code> é a configuração que muda o comportamento do shell. A tabela abaixo mostra uma lista de opções que podem ser úteis para você:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Atalho</th>
+<th align="left">Nome</th>
+<th align="left">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code class="language-text">-f</code></td>
+<td align="left">noglob</td>
+<td align="left">Desativa expanção de nome de arquivos, em inglês, <em>globbing</em>.</td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">-i</code></td>
+<td align="left">interactive</td>
+<td align="left">Script roda no modo <em>interativo</em>.</td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">-n</code></td>
+<td align="left">noexec</td>
+<td align="left">Lê comandos, mas não os executa (verifica a sintaxe).</td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">-t</code></td>
+<td align="left">—</td>
+<td align="left">Saí da execução depois do primeiro comando.</td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">-v</code></td>
+<td align="left">verbose</td>
+<td align="left">Imprimi cada comando no <code class="language-text">stderr</code> antes de executa-los.</td>
+</tr>
+<tr>
+<td align="center"><code class="language-text">-x</code></td>
+<td align="left">xtrace</td>
+<td align="left">Imprimi cada comando e expande seus argumentos e envia para o <code class="language-text">stderr</code> antes de executa-los.</td>
+</tr>
+</tbody>
+</table>
+<p>Por exemplo, podemos ter scripts com <code class="language-text">-x</code> como opção, assim como:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token shebang important">#!/bin/bash -x</span>
+
+<span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">;</span> i<span class="token operator">++</span> <span class="token punctuation">))</span></span><span class="token punctuation">;</span> <span class="token keyword">do</span>
+  <span class="token builtin class-name">echo</span> <span class="token variable">$i</span>
+<span class="token keyword">done</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>Isso vai imprimir o valor das variáveis para o <code class="language-text">stdout</code> junto de outras informações úteis:</p>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">$ ./my_script
++ (( i = 0 ))
++ (( i &lt; 3 ))
++ echo 0
+0
++ (( i++  ))
++ (( i &lt; 3 ))
++ echo 1
+1
++ (( i++  ))
++ (( i &lt; 3 ))
++ echo 2
+2
++ (( i++  ))
++ (( i &lt; 3 ))</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>As vezes nós precisamos depurar uma parte do script. Nesse caso, usar o comando <code class="language-text">set</code> é mais conveniente. Esse comando habilita e desabilita opções. Opções são desabilitadas usando <code class="language-text">-</code> e habilitadas usando <code class="language-text">+</code>:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
+
+<span class="token builtin class-name">echo</span> <span class="token string">"xtrace está desabilitado"</span>
+<span class="token builtin class-name">set</span> -x
+<span class="token builtin class-name">echo</span> <span class="token string">"xtrace está habilitado"</span>
+<span class="token builtin class-name">set</span> +x
+<span class="token builtin class-name">echo</span> <span class="token string">"xtrace foi desabilitado novamente"</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<h1>Posfácio</h1>
+<p>Eu espero que esse pequeno guia tenha sido interação e tenha te ajudado a entender um pouco mais sobre o Bash. Para ser honesto, eu escrevi esse guia para mim mesmo, para assim, não esquecer o básico do bash. Eu tentei escrever de uma maneira concisa, mas significativamente útil e eu espero que você tenha gostado.</p>
+<p>Esse guia narra minha própria experiência com o Bash. Ele não tem foco de abranger toda as funcionalidades, e, se você quiser saber mais, pode começar através do <code class="language-text">man bash</code>.</p>
+<p>Contribuições são absolutamente bem-vindas, e eu ficarei grato por qualquer correção ou perguntas que você vier a ter e me enviar. Para isso, crie uma <a href="https://github.com/denysdovhan/bash-handbook/issues" target="_blank" rel="nofollow noopener noreferrer">nova issue no repositorio original</a>.</p>
+<p>Obrigado por ler esse guia de bolso!</p>
+<h1>Licença</h1>
+<p>Esta apostila incrível foi escrita originalmente pelo © <a href="http://denysdovhan.com" target="_blank" rel="nofollow noopener noreferrer">Denys Dovhan</a> e está licenciada nos termos (CC 4.0)<a href="http://creativecommons.org/licenses/by/4.0/" target="_blank" rel="nofollow noopener noreferrer"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg?style=flat-square" alt="CC 4.0"></a> O que permitiu com que nós traduzissemos, adaptássemos e redistribuissemos esse conhecimento! Nosso eternos agradecimento a ele!</p>
+<hr>
+<p><a href="http://bit.ly/pauloluan-insta" target="_blank" rel="nofollow noopener noreferrer"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--_qQqH59e--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3jzrvlwsqdrz7j5wgtxb.png" alt="Instagram Paulo Luan"></a></p>
+<hr></section><hr style="margin-bottom:1.75rem"/><footer></footer></article></main><footer>2021<!-- --> <a href="https://bit.ly/pauloluan-insta">Reativa Tecnologia</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script src="https://platform.twitter.com/widgets.js"></script><script src="https://www.instagram.com/embed.js"></script><script src="https://embedr.flickr.com/assets/client-code.js"></script><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-155080700-5', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/linux_bash_handbook/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-78cdc6a84a6e659c51c0.js"],"app":["/app-6d831502f5b033c00c9a.js"],"component---src-pages-404-js":["/component---src-pages-404-js-443b9414fd7616b09644.js"],"component---src-pages-index-js":["/component---src-pages-index-js-1b8a1780a3d052ddcc51.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-eea8ccbf252e87f3a147.js"]};/*]]>*/</script><script src="/polyfill-78cdc6a84a6e659c51c0.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-eea8ccbf252e87f3a147.js" async=""></script><script src="/cd7d5f864fc9e15ed8adef086269b0aeff617554-1c0ef869a859675a1e93.js" async=""></script><script src="/commons-8efd3e762cdb1d39fca0.js" async=""></script><script src="/app-6d831502f5b033c00c9a.js" async=""></script><script src="/532a2f07-8d0154c2cf59560b38a4.js" async=""></script><script src="/framework-8e528b732ab2eaadb7b7.js" async=""></script><script src="/styles-755093da0c07f4b49226.js" async=""></script><script src="/webpack-runtime-21c9d4a6b4882039bec8.js" async=""></script></body></html>

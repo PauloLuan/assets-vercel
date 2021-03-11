@@ -1,0 +1,687 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/styles.133dbdfe631720b2d725.css" id="gatsby-global-css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:none;text-shadow:0 1px rgba(0,0,0,.3);font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#272822}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#8292a2}.token.punctuation{color:#f8f8f2}.token.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#f92672}.token.boolean,.token.number{color:#ae81ff}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#a6e22e}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.class-name,.token.function{color:#e6db74}.token.keyword{color:#66d9ef}.token.important,.token.regex{color:#fd971f}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.28.1"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2374911412821725'); // Insert your pixel ID here.
+  fbq('track', 'PageView');
+      </script><script>window.dataLayer = window.dataLayer || [];window.dataLayer.push({"platform":"plataforma-reativa"}); (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer', 'GTM-KZH8KWD');</script><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/favicon-32x32.png?v=d2742f2dddd737dec60ee2a5226edb06" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=d2742f2dddd737dec60ee2a5226edb06"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=d2742f2dddd737dec60ee2a5226edb06"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=d2742f2dddd737dec60ee2a5226edb06"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=d2742f2dddd737dec60ee2a5226edb06"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=d2742f2dddd737dec60ee2a5226edb06"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=d2742f2dddd737dec60ee2a5226edb06"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=d2742f2dddd737dec60ee2a5226edb06"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=d2742f2dddd737dec60ee2a5226edb06"/><title data-react-helmet="true">Desafios Entrevistas de Frontend | Reativa Tecnologia</title><meta data-react-helmet="true" name="description" content="Coloque os testes no seu Github, e monte um portfólio!"/><meta data-react-helmet="true" property="og:title" content="Desafios Entrevistas de Frontend"/><meta data-react-helmet="true" property="og:description" content="Coloque os testes no seu Github, e monte um portfólio!"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Reativa"/><meta data-react-helmet="true" name="twitter:title" content="Desafios Entrevistas de Frontend"/><meta data-react-helmet="true" name="twitter:description" content="Coloque os testes no seu Github, e monte um portfólio!"/><link as="script" rel="preload" href="/webpack-runtime-21c9d4a6b4882039bec8.js"/><link as="script" rel="preload" href="/styles-755093da0c07f4b49226.js"/><link as="script" rel="preload" href="/framework-8e528b732ab2eaadb7b7.js"/><link as="script" rel="preload" href="/532a2f07-8d0154c2cf59560b38a4.js"/><link as="script" rel="preload" href="/app-6d831502f5b033c00c9a.js"/><link as="script" rel="preload" href="/commons-8efd3e762cdb1d39fca0.js"/><link as="script" rel="preload" href="/cd7d5f864fc9e15ed8adef086269b0aeff617554-1c0ef869a859675a1e93.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-eea8ccbf252e87f3a147.js"/><link as="fetch" rel="preload" href="/page-data/desafios/frontend/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1061827086.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/63159454.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZH8KWD" height="0" width="0" style="display: none; visibility: hidden" aria-hidden="true"></iframe></noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0">Reativa Tecnologia</h3></header><main><article><header><h1 style="margin-top:1.75rem;margin-bottom:0">Desafios Entrevistas de Frontend</h1></header><section><hr>
+<p><a href="https://bit.ly/guia-dev-autodidata" target="_blank" rel="nofollow noopener noreferrer"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s---C2qy149--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5t0hvl1xma1vzppg0tsw.png" alt="Desafios Frontend"></a></p>
+<hr>
+<table>
+<thead>
+<tr>
+<th>Lang</th>
+<th>Empresa</th>
+<th>Stack</th>
+<th>Challenge</th>
+<th>Jobs on LinkedIn</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pt</td>
+<td><a href="http://www.1sti.com.br/" target="_blank" rel="nofollow noopener noreferrer">1STi</a></td>
+<td>React</td>
+<td><a href="https://github.com/1STi/desafio-frontend/" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/1sti/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>en</td>
+<td><a href="http://www.addisongloballtd.com/" target="_blank" rel="nofollow noopener noreferrer">Addison Global - 1</a></td>
+<td>React, Redux</td>
+<td><a href="https://github.com/addisonglobal/frontend-technical-test" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>en</td>
+<td><a href="http://www.addisongloballtd.com/" target="_blank" rel="nofollow noopener noreferrer">Addison Global - 2</a></td>
+<td>HTML, CSS &#x26; JS</td>
+<td><a href="https://github.com/addisonglobal/web-technical-test" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>en</td>
+<td><a href="https://aircall.io/" target="_blank" rel="nofollow noopener noreferrer">AirCall - 1</a></td>
+<td>HTML, CSS &#x26; JS, React</td>
+<td><a href="https://github.com/aircall/frontend-test" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>en</td>
+<td><a href="https://aircall.io/" target="_blank" rel="nofollow noopener noreferrer">AirCall - 2</a></td>
+<td>HTML, CSS &#x26; JS, React</td>
+<td><a href="https://github.com/aircall/frontend-test" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>en</td>
+<td><a href="http://www.ambulnz.com/" target="_blank" rel="nofollow noopener noreferrer">Ambulnz</a></td>
+<td>Git, NPM &#x26; Bower</td>
+<td><a href="https://github.com/AmbulnzLLC/frontend-challenge" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://www.agrotis.com/" target="_blank" rel="nofollow noopener noreferrer">Agrotis</a></td>
+<td>React, Redux</td>
+<td><a href="https://github.com/agrotis-io/desafio-front" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/softwareagrotis/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>en</td>
+<td><a href="https://amaro.com/" target="_blank" rel="nofollow noopener noreferrer">Amaro</a></td>
+<td>React, Redux, Sass &#x26; Webpack</td>
+<td><a href="https://github.com/amarofashion/front-end-challenge/" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/amaro/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://apiki.com/carreira/" target="_blank" rel="nofollow noopener noreferrer">Apiki</a></td>
+<td>HTML, CSS &#x26; JS, React</td>
+<td><a href="https://github.com/Apiki/front-end-challenge" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/apiki/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://ri.b2w.digital/" target="_blank" rel="nofollow noopener noreferrer">B2W</a></td>
+<td>Framework JS, Preprocessor CSS &#x26; Task Runners</td>
+<td><a href="https://github.com/b2w-marketplace/code-challenge" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/b2w---companhia-global-do-varejo/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://www.barato.com.br/" target="_blank" rel="nofollow noopener noreferrer">Barato Coletivo</a></td>
+<td>HTML, JS, CSS, React, Vuejs, Angular</td>
+<td><a href="https://github.com/baratocoletivo/desafio-frontend" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/barato-coletivo/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="http://www.bcredi.com.br/" target="_blank" rel="nofollow noopener noreferrer">Bcredi</a></td>
+<td>HTML, Preprocessor CSS, Framework JS</td>
+<td><a href="https://github.com/bcredi/bcredi-frontend-challenge" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/bcrediservicosfinanceiros/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="http://www.belezanaweb.com.br/" target="_blank" rel="nofollow noopener noreferrer">Beleza Na Web</a></td>
+<td>React, CSS in JS</td>
+<td><a href="https://github.com/belezanaweb/test-front" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/beleza-na-web/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="http://www.bornlogic.com/" target="_blank" rel="nofollow noopener noreferrer">Bornlogic</a></td>
+<td>React, Redux</td>
+<td><a href="https://github.com/bornlogic/desafio-frontend" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/bornlogic/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://www.buscape.com.br/" target="_blank" rel="nofollow noopener noreferrer">Buscapé</a></td>
+<td>HTML, CSS &#x26; JS</td>
+<td><a href="https://github.com/buscape-company/exercicios/tree/master/frontend" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/zoom-buscape/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://bossabox.com/para-profissionais" target="_blank" rel="nofollow noopener noreferrer">Bossabox</a></td>
+<td>HTML, CSS &#x26; JS, Framework JS</td>
+<td><a href="https://www.notion.so/Front-end-c12adcdbe7a1425dbfbcd5a397b4ff10" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="http://www.grupoboticario.com.br" target="_blank" rel="nofollow noopener noreferrer">Boticário</a></td>
+<td>HTML, CSS &#x26; JS, Framework JS</td>
+<td><a href="https://github.com/felipe-ssilva/challenge" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/grupo-boticario/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>en</td>
+<td><a href="https://www.chama-app.com.br/" target="_blank" rel="nofollow noopener noreferrer">Chama</a></td>
+<td>React, Redux</td>
+<td><a href="https://github.com/chamatheapp/chama-frontend-assignment/" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://www.chaordic.com.br/" target="_blank" rel="nofollow noopener noreferrer">Chaordic - 1</a></td>
+<td>HTML, CSS &#x26; JS</td>
+<td><a href="https://github.com/chaordic/frontend-developer-challenge" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://www.chaordic.com.br/" target="_blank" rel="nofollow noopener noreferrer">Chaordic - 2</a></td>
+<td>HTML, SASS, React, Redux</td>
+<td><a href="https://github.com/chaordic/frontend-challenger" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>en</td>
+<td><a href="http://churchdesk.com" target="_blank" rel="nofollow noopener noreferrer">ChurchDesk</a></td>
+<td>Framework JS, Preprocessor CSS &#x26; Task Runners</td>
+<td><a href="https://github.com/ChurchDesk/cd-challenge" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://www.ciclic.com.br/" target="_blank" rel="nofollow noopener noreferrer">Ciclic</a></td>
+<td>HTML, CSS &#x26; JS</td>
+<td><a href="https://github.com/ciclic/test-frontend" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/ciclicbr/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="http://www.climatempo.com.br/" target="_blank" rel="nofollow noopener noreferrer">Clima Tempo</a></td>
+<td>NodeJS &#x26; PHP</td>
+<td><a href="https://github.com/climatempo/challenge-accepted" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/climatempo/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://codeby.com.br/" target="_blank" rel="nofollow noopener noreferrer">Codeby</a></td>
+<td>React, Redux &#x26; NodeJS</td>
+<td><a href="https://github.com/codebyteam/teste-react-node" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://www.concrete.com.br/" target="_blank" rel="nofollow noopener noreferrer">Concrete Solutions</a></td>
+<td>HTML, CSS &#x26; JS</td>
+<td><a href="https://github.com/concretesolutions/recrutamento-fe" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/concretebr/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://www.conpass.io/" target="_blank" rel="nofollow noopener noreferrer">Conpass</a></td>
+<td>HTML, CSS &#x26; JS, React, Redux</td>
+<td><a href="https://github.com/Conpass/challenges/blob/master/Frontend-Challenge.md" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/conpass---onboarding/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="http://www.contabilizei.com.br/" target="_blank" rel="nofollow noopener noreferrer">Contabilizei</a></td>
+<td>Framework JS, Preprocessor CSS &#x26; Task Runners</td>
+<td><a href="https://github.com/contabilizei/front-end-teste" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/contabilizei/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="http://creditas.com.br/" target="_blank" rel="nofollow noopener noreferrer">Creditas</a></td>
+<td>HTML, CSS &#x26; JS</td>
+<td><a href="https://github.com/Creditas/challenge/tree/master/frontend" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/creditasbr/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://cubo.network/" target="_blank" rel="nofollow noopener noreferrer">Cubo Network</a></td>
+<td>Framework JS, Preprocessor CSS &#x26; Task Runners</td>
+<td><a href="https://github.com/cubonetwork/frontend-challenge" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/cubo-network/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>en</td>
+<td><a href="https://cubo.network/" target="_blank" rel="nofollow noopener noreferrer">Cubo Network</a></td>
+<td>Framework JS, Preprocessor CSS &#x26; Node.js</td>
+<td><a href="https://github.com/cubonetwork/fullstack-challenge" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/cubo-network/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="">Da1help</a></td>
+<td>HTML, CSS, JS &#x26; Framework (Optional)</td>
+<td><a href="https://github.com/da1help/desafios/blob/master/desafio-front-end.md" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/1help/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://dindigital.io/" target="_blank" rel="nofollow noopener noreferrer">Din Digital</a></td>
+<td>HTML, CSS &#x26; JS</td>
+<td><a href="https://github.com/dindigital/test-front-2017" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/din-digital/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://www.easynvest.com.br/" target="_blank" rel="nofollow noopener noreferrer">Easynvest</a></td>
+<td>HTML, CSS &#x26; JS</td>
+<td><a href="https://github.com/easynvest/teste-front-end" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://carreiras.easynvest.com.br/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="http://www.enext.com.br/" target="_blank" rel="nofollow noopener noreferrer">ENext</a></td>
+<td>HTML, CSS &#x26; JS</td>
+<td><a href="https://github.com/enextgroup/quero-trabalhar-na-enext" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/enext-ecommerce/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>en</td>
+<td><a href="https://entria.com.br/" target="_blank" rel="nofollow noopener noreferrer">Entria</a></td>
+<td>React, React Native, GraphQL &#x26; Relay Modern</td>
+<td><a href="https://github.com/entria/jobs/" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/entria/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>en</td>
+<td><a href="https://esper.com/" target="_blank" rel="nofollow noopener noreferrer">Esper</a></td>
+<td>Typescript, React &#x26; LESS</td>
+<td><a href="https://github.com/esperco/front-end-challenge" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://www.estantevirtual.com.br/" target="_blank" rel="nofollow noopener noreferrer">Estante Virtual</a></td>
+<td>Vue, Sass, Firebase</td>
+<td><a href="https://github.com/estantevirtual/vagas/blob/master/desafios/frontend.md" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/estante-virtual/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>en</td>
+<td><a href="http://exzeo.com/" target="_blank" rel="nofollow noopener noreferrer">Exzeo</a></td>
+<td>HTML, CSS &#x26; JS</td>
+<td><a href="https://github.com/exzeo/FrontEndChallenge" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://www.folha.uol.com.br/" target="_blank" rel="nofollow noopener noreferrer">Folha de SP</a></td>
+<td>HTML, CSS &#x26; JS</td>
+<td><a href="https://github.com/FolhaSP/front-end-test" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/folha-de-spaulo/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://www.getninjas.com.br/" target="_blank" rel="nofollow noopener noreferrer">GetNinjas</a></td>
+<td>HTML, CSS, JS, Node, Express &#x26; Tests</td>
+<td><a href="https://github.com/getninjas/frontend-challenge" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://getninjas.breezy.hr/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://goomer.com.br/" target="_blank" rel="nofollow noopener noreferrer">Goomer</a></td>
+<td>HTML, CSS &#x26; JS, React</td>
+<td><a href="https://github.com/goomerdev/job-dev-frontend-interview" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/goomer/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://www.hotelurbano.com/" target="_blank" rel="nofollow noopener noreferrer">Hotel Urbano</a></td>
+<td>HTML, Preprocessor CSS, Framework JS &#x26; Tests</td>
+<td><a href="https://github.com/HotelUrbano/challenge-charlie" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/hurb/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="http://icasei.com.br/" target="_blank" rel="nofollow noopener noreferrer">iCasei</a></td>
+<td>Framework JS, Preprocessor CSS &#x26; Task Runners</td>
+<td><a href="https://github.com/icasei/teste-front-end" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/icasei/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="http://www.icolabora.com.br/" target="_blank" rel="nofollow noopener noreferrer">iColabora</a></td>
+<td>HTML, CSS &#x26; jQuery</td>
+<td><a href="https://github.com/iColabora/teste-front-end-developer" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/icolabora/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>en</td>
+<td><a href="http://ingenious.agency/" target="_blank" rel="nofollow noopener noreferrer">Ingenious</a></td>
+<td>Framework JS, Node.js</td>
+<td><a href="https://github.com/ingsw-dev/frontend-test" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="http://www.intelipost.com.br/" target="_blank" rel="nofollow noopener noreferrer">Intelipost</a></td>
+<td>Framework JS, Preprocessor CSS &#x26; Task Runners</td>
+<td><a href="https://github.com/intelipost/job-frontend-developer" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/intelipost/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="http://www.itelios.com.br/" target="_blank" rel="nofollow noopener noreferrer">Itelios</a></td>
+<td>HTML, CSS &#x26; JS</td>
+<td><a href="https://github.com/iteliosbrasil/itelios-frontend-challenge" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/itelios-brasil/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>en</td>
+<td><a href="https://join.com/" target="_blank" rel="nofollow noopener noreferrer">Join</a></td>
+<td>React &#x26; Test</td>
+<td><a href="https://github.com/join-com/coding-challenge-frontend-react" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>en</td>
+<td><a href="https://joyjet.com/" target="_blank" rel="nofollow noopener noreferrer">Joyjet</a></td>
+<td>HTML, CSS &#x26; JS</td>
+<td><a href="https://bitbucket.org/lixao/tech-interview/src/master/webdesign/" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/joyjet-digital-space-agency/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>en</td>
+<td><a href="https://www.juntossomosmais.com.br/" target="_blank" rel="nofollow noopener noreferrer">Juntos Somos Mais</a></td>
+<td>HTML, CSS &#x26; JS</td>
+<td><a href="https://github.com/juntossomosmais/frontend-challenge" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/juntos-somos-mais/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>en</td>
+<td>🇭🇰 <a href="https://www.lalamove.com/careers" target="_blank" rel="nofollow noopener noreferrer">Lalamove</a></td>
+<td>Framework JS</td>
+<td><a href="https://github.com/lalamove/challenge/blob/master/frontend.md" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://www.linx.com.br/" target="_blank" rel="nofollow noopener noreferrer">Linx</a></td>
+<td>HTML, CSS &#x26; JS</td>
+<td><a href="https://github.com/chaordic/desafio-frontend" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="http://lojaskd.com.br/" target="_blank" rel="nofollow noopener noreferrer">LojasKD</a></td>
+<td>Framework JS, Preprocessor CSS &#x26; Task Runners</td>
+<td><a href="https://github.com/lojaskd/frontend-challenge" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>en</td>
+<td><a href="http://loktra.com/" target="_blank" rel="nofollow noopener noreferrer">LoKtra</a></td>
+<td>HTML, CSS &#x26; JS</td>
+<td><a href="https://github.com/Loktra/Front-End-Engineer" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://corretora.miraeasset.com.br/" target="_blank" rel="nofollow noopener noreferrer">Mirae Asset</a></td>
+<td>React</td>
+<td><a href="https://github.com/marcobfv/desafio-mirae-react" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="http://www.mktvirtual.com.br/" target="_blank" rel="nofollow noopener noreferrer">Mkt Virtual</a></td>
+<td>WordPress</td>
+<td><a href="https://github.com/mktvirtual/front-end-test-wordpress" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/mkt-virtual/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://www.mongeralaegon.com.br/" target="_blank" rel="nofollow noopener noreferrer">Mongeral Aegon</a></td>
+<td>Framework JS, Preprocessor CSS &#x26; Task Runners</td>
+<td><a href="https://github.com/MongeralAegonDigital/front-end-trabalhe-na-mad" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/mag-seguros/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="http://www.nexaas.com/" target="_blank" rel="nofollow noopener noreferrer">Nexaas</a></td>
+<td>HTML, CSS &#x26; JS</td>
+<td><a href="https://github.com/myfreecomm/desafio-design-01" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/nexaas/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://www.original.io/" target="_blank" rel="nofollow noopener noreferrer">Original.io</a></td>
+<td>HTML, CSS &#x26; JS</td>
+<td><a href="https://github.com/original-io/join-us" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/original-io/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://www.petlove.com.br" target="_blank" rel="nofollow noopener noreferrer">Petlove</a></td>
+<td>VueJS, React, Vannila</td>
+<td><a href="https://github.com/petlove/vagas/tree/master/frontend" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/petlovebr/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://www.personare.com.br/" target="_blank" rel="nofollow noopener noreferrer">Personare</a></td>
+<td>React</td>
+<td><a href="https://github.com/Personare/front-end-challenge" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/personare/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://www.picpay.com/site" target="_blank" rel="nofollow noopener noreferrer">PicPay</a></td>
+<td>Angular</td>
+<td><a href="https://github.com/PicPay/picpay-desafio-frontend" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://picpay.gupy.io/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>en</td>
+<td><a href="https://www.pipefy.com/" target="_blank" rel="nofollow noopener noreferrer">Pipefy</a></td>
+<td>React, Redux, GraphQl, Apollo</td>
+<td><a href="https://github.com/pipefy/RecruitmentExercise/blob/master/FRONTENDEXERCISE.md" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/pipefy/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://pismo.io/en/" target="_blank" rel="nofollow noopener noreferrer">Pismo</a></td>
+<td>HTML, Preprocessor CSS &#x26; JS</td>
+<td><a href="https://github.com/pismo/frontend-test" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="http://profite.com.br/" target="_blank" rel="nofollow noopener noreferrer">Profite</a></td>
+<td>HTML, CSS &#x26; jQuery</td>
+<td><a href="https://github.com/arthurgimenes/teste-profite" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/agenciaprofite/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://www.promobit.com.br/" target="_blank" rel="nofollow noopener noreferrer">Promobit</a></td>
+<td>React, CSS &#x26; Task Runners</td>
+<td><a href="https://github.com/Promobit/front-end-challenge" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.promobit.com.br/Index/vagas/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="http://r7.com/" target="_blank" rel="nofollow noopener noreferrer">R7.com</a></td>
+<td>Framework JS, Preprocessor CSS &#x26; Task Runners</td>
+<td><a href="https://github.com/r7com/frontend-test" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/r7-com/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>en</td>
+<td><a href="http://roomkey.com/" target="_blank" rel="nofollow noopener noreferrer">Room Key</a></td>
+<td>Framework JS, Preprocessor CSS &#x26; Task Runners</td>
+<td><a href="https://github.com/roomkey/front-end-code-challenge" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>en</td>
+<td><a href="https://significa.pt" target="_blank" rel="nofollow noopener noreferrer">Significa</a></td>
+<td>React, CSS, JS &#x26; Design</td>
+<td><a href="https://github.com/Significa/frontend-challenge" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>en</td>
+<td><a href="http://www.sitepoint.com/" target="_blank" rel="nofollow noopener noreferrer">Sitepoint</a></td>
+<td>Framework JS, Preprocessor CSS &#x26; Task Runners</td>
+<td><a href="https://github.com/sitepoint/frontend-test" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>en</td>
+<td><a href="http://snow.dog/" target="_blank" rel="nofollow noopener noreferrer">Snowdog</a></td>
+<td>Framework JS, Preprocessor CSS &#x26; Task Runners</td>
+<td><a href="https://github.com/SnowdogApps/front-end-recruitment-test" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="http://www.somarmeteorologia.com.br/" target="_blank" rel="nofollow noopener noreferrer">Somar Meteorologia</a></td>
+<td>Framework JS, Preprocessor CSS &#x26; Task Runners</td>
+<td><a href="https://github.com/somarmeteorologia/challenge/tree/master/frontend" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/somar-meteorologia/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>en</td>
+<td><a href="http://storecast.de/" target="_blank" rel="nofollow noopener noreferrer">Storecast</a></td>
+<td>React</td>
+<td><a href="https://github.com/storecast/frontend-challenge" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>en</td>
+<td><a href="https://github.com/StreamCo" target="_blank" rel="nofollow noopener noreferrer">StreamCo</a></td>
+<td>React</td>
+<td><a href="https://github.com/StreamCo/react-coding-challenge" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://www.tagview.com.br/" target="_blank" rel="nofollow noopener noreferrer">Tagview</a></td>
+<td>HTML, CSS &#x26; JS</td>
+<td><a href="https://github.com/tagview/tagchatter" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/tagview-tecnologia/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>en</td>
+<td><a href="http://tenantbase.com/" target="_blank" rel="nofollow noopener noreferrer">TenantBase</a></td>
+<td>HTML, CSS &#x26; jQuery</td>
+<td><a href="https://github.com/TenantBase/hiring-frontend-challenge" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>en</td>
+<td><a href="https://www.thortful.com/" target="_blank" rel="nofollow noopener noreferrer">Thortful</a></td>
+<td>HTML, CSS, JS/CoffeeScript &#x26; AngularJS</td>
+<td><a href="https://github.com/ThortfulNew/FrontEndChallenge" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>br</td>
+<td><a href="https://www.toroinvestimentos.com.br/" target="_blank" rel="nofollow noopener noreferrer">Toro Investimentos</a></td>
+<td>HTML, CSS, JS/TS, Websocket</td>
+<td><a href="https://github.com/ToroInvestimentos/desafio-toro-frontend" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="http://www.trackmob.com.br/" target="_blank" rel="nofollow noopener noreferrer">Trackmob</a></td>
+<td>React Native</td>
+<td><a href="https://github.com/Trackmob/trackmob-frontend-test" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/trackmob/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="http://trampos.co/" target="_blank" rel="nofollow noopener noreferrer">Trampos</a></td>
+<td>HTML, CSS &#x26; JS</td>
+<td><a href="https://github.com/trampos/glowing-octo-batman" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/trampos/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="http://textecnologia.com.br/" target="_blank" rel="nofollow noopener noreferrer">TExTecnologia</a></td>
+<td>Framework JS, Preprocessor CSS &#x26; Node.js</td>
+<td><a href="https://github.com/TExTecnologia/teste-fullstack" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/textecnologia/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>en</td>
+<td><a href="https://www.travix.com/" target="_blank" rel="nofollow noopener noreferrer">Travix</a></td>
+<td>React, Redux, Preprocessor CSS &#x26; Tests</td>
+<td><a href="https://github.com/Travix-International/frontend-tech-test" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://www.umbler.com/br" target="_blank" rel="nofollow noopener noreferrer">Umbler</a></td>
+<td>HTML, JS, Preprocessor CSS &#x26; Task Runner</td>
+<td><a href="https://github.com/umbler-team/front-challenge" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/umbler/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://uolhost.uol.com.br/" target="_blank" rel="nofollow noopener noreferrer">UOL Host</a></td>
+<td>HTML, Preprocessor CSS &#x26; JS</td>
+<td><a href="https://github.com/uolhost/test-frontEnd" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/uol/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://www.vagas.com.br/" target="_blank" rel="nofollow noopener noreferrer">Vagas.com</a></td>
+<td>HTML, CSS, JS</td>
+<td><a href="https://github.com/VAGAScom/desafio-front-end" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/vagascom/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>en</td>
+<td><a href="https://wiredcraft.com" target="_blank" rel="nofollow noopener noreferrer">Wiredcraft</a></td>
+<td>HTML, Preprocessor CSS &#x26; Framework JS</td>
+<td><a href="https://github.com/Wiredcraft/test-frontend" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://www.woopsicredi.com/" target="_blank" rel="nofollow noopener noreferrer">Woop Sicredi</a></td>
+<td>Angular, React, Stencil</td>
+<td><a href="https://github.com/WoopSicredi/jobs/issues/6" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>n/a</td>
+<td><a href="http://wooza.com.br/" target="_blank" rel="nofollow noopener noreferrer">Wooza</a></td>
+<td>HTML, Preprocessor CSS &#x26; Framework JS</td>
+<td><a href="http://teste-js.celulardireto.com.br/" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td><a href="https://www.linkedin.com/company/wooza/jobs/" target="_blank" rel="nofollow noopener noreferrer">Jobs</a></td>
+</tr>
+<tr>
+<td>en</td>
+<td><a href="http://getyodlr.com/" target="_blank" rel="nofollow noopener noreferrer">Yodlr</a></td>
+<td>Framework JS, Preprocessor CSS &#x26; Task Runners</td>
+<td><a href="https://github.com/yodlr/frontend-code-challenge" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>en</td>
+<td><a href="http://www.zepl.com/" target="_blank" rel="nofollow noopener noreferrer">ZEPL</a></td>
+<td>Framework JS, Preprocessor CSS &#x26; Task Runners</td>
+<td><a href="https://github.com/ZEPL/front-end-challenge" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>en</td>
+<td><a href="https://vai.car" target="_blank" rel="nofollow noopener noreferrer">VAI.car</a></td>
+<td>Generalist Web Platform</td>
+<td><a href="https://github.com/blongg/vai-code-challenges" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>pt</td>
+<td><a href="https://www.vivadecora.com.br/" target="_blank" rel="nofollow noopener noreferrer">Viva Decora</a></td>
+<td>HTML, Preprocessor CSS &#x26; Framework JS</td>
+<td><a href="https://github.com/vivadecora/projeto-front-end-vivadecora-nao-fazer-fork" target="_blank" rel="nofollow noopener noreferrer">Link do desafio →</a></td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><a href="http://bit.ly/pauloluan-insta" target="_blank" rel="nofollow noopener noreferrer"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--_qQqH59e--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3jzrvlwsqdrz7j5wgtxb.png" alt="Instagram Paulo Luan"></a></p>
+<hr></section><hr style="margin-bottom:1.75rem"/><footer></footer></article></main><footer>2021<!-- --> <a href="https://bit.ly/pauloluan-insta">Reativa Tecnologia</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script src="https://platform.twitter.com/widgets.js"></script><script src="https://www.instagram.com/embed.js"></script><script src="https://embedr.flickr.com/assets/client-code.js"></script><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-155080700-5', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/desafios/frontend/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-78cdc6a84a6e659c51c0.js"],"app":["/app-6d831502f5b033c00c9a.js"],"component---src-pages-404-js":["/component---src-pages-404-js-443b9414fd7616b09644.js"],"component---src-pages-index-js":["/component---src-pages-index-js-1b8a1780a3d052ddcc51.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-eea8ccbf252e87f3a147.js"]};/*]]>*/</script><script src="/polyfill-78cdc6a84a6e659c51c0.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-eea8ccbf252e87f3a147.js" async=""></script><script src="/cd7d5f864fc9e15ed8adef086269b0aeff617554-1c0ef869a859675a1e93.js" async=""></script><script src="/commons-8efd3e762cdb1d39fca0.js" async=""></script><script src="/app-6d831502f5b033c00c9a.js" async=""></script><script src="/532a2f07-8d0154c2cf59560b38a4.js" async=""></script><script src="/framework-8e528b732ab2eaadb7b7.js" async=""></script><script src="/styles-755093da0c07f4b49226.js" async=""></script><script src="/webpack-runtime-21c9d4a6b4882039bec8.js" async=""></script></body></html>

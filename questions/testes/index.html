@@ -1,0 +1,366 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/styles.133dbdfe631720b2d725.css" id="gatsby-global-css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:none;text-shadow:0 1px rgba(0,0,0,.3);font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#272822}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#8292a2}.token.punctuation{color:#f8f8f2}.token.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#f92672}.token.boolean,.token.number{color:#ae81ff}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#a6e22e}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.class-name,.token.function{color:#e6db74}.token.keyword{color:#66d9ef}.token.important,.token.regex{color:#fd971f}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.28.1"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2374911412821725'); // Insert your pixel ID here.
+  fbq('track', 'PageView');
+      </script><script>window.dataLayer = window.dataLayer || [];window.dataLayer.push({"platform":"plataforma-reativa"}); (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer', 'GTM-KZH8KWD');</script><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/favicon-32x32.png?v=d2742f2dddd737dec60ee2a5226edb06" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=d2742f2dddd737dec60ee2a5226edb06"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=d2742f2dddd737dec60ee2a5226edb06"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=d2742f2dddd737dec60ee2a5226edb06"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=d2742f2dddd737dec60ee2a5226edb06"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=d2742f2dddd737dec60ee2a5226edb06"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=d2742f2dddd737dec60ee2a5226edb06"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=d2742f2dddd737dec60ee2a5226edb06"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=d2742f2dddd737dec60ee2a5226edb06"/><title data-react-helmet="true">Preparatório de perguntas de QA | Reativa Tecnologia</title><meta data-react-helmet="true" name="description" content="Preparatório de perguntas de QA"/><meta data-react-helmet="true" property="og:title" content="Preparatório de perguntas de QA"/><meta data-react-helmet="true" property="og:description" content="Preparatório de perguntas de QA"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Reativa"/><meta data-react-helmet="true" name="twitter:title" content="Preparatório de perguntas de QA"/><meta data-react-helmet="true" name="twitter:description" content="Preparatório de perguntas de QA"/><link as="script" rel="preload" href="/webpack-runtime-21c9d4a6b4882039bec8.js"/><link as="script" rel="preload" href="/styles-755093da0c07f4b49226.js"/><link as="script" rel="preload" href="/framework-8e528b732ab2eaadb7b7.js"/><link as="script" rel="preload" href="/532a2f07-8d0154c2cf59560b38a4.js"/><link as="script" rel="preload" href="/app-6d831502f5b033c00c9a.js"/><link as="script" rel="preload" href="/commons-8efd3e762cdb1d39fca0.js"/><link as="script" rel="preload" href="/cd7d5f864fc9e15ed8adef086269b0aeff617554-1c0ef869a859675a1e93.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-eea8ccbf252e87f3a147.js"/><link as="fetch" rel="preload" href="/page-data/questions/testes/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1061827086.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/63159454.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZH8KWD" height="0" width="0" style="display: none; visibility: hidden" aria-hidden="true"></iframe></noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0">Reativa Tecnologia</h3></header><main><article><header><h1 style="margin-top:1.75rem;margin-bottom:0">Preparatório de perguntas de QA</h1></header><section><hr>
+<p><a href="https://bit.ly/guia-dev-autodidata" target="_blank" rel="nofollow noopener noreferrer"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--MCEsavan--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/gtesx0vq1c4m1bxtqhlo.png" alt="Perguntas QA"></a></p>
+<hr>
+<h2>Q1 : What is the difference between load and stress testing?</h2>
+<p>Answer</p>
+<p>A load test is usually conducted to understand the behaviour of the system under a specific expected load. This load can be the <em>expected concurrent number of users</em> on the application performing a specific number of transactions within the set duration. This test will give out the response times of all the important business critical transactions.</p>
+<p>A stress testing instead is performed to understand the upper limits of capacity within the system. This kind of test is done to determine the system’s robustness in terms of <em>extreme load</em> and helps application administrators to determine if the system will perform sufficiently if the current load goes well above the expected maximum.</p>
+<hr>
+<p><em>Source:</em> <a href="https://en.wikipedia.org/wiki/Software_performance_testing#Load_testing" title="What is the difference between load and stress testing? Interview Questions Source To Answer" target="_blank" rel="nofollow noopener noreferrer">en.wikipedia.org</a></p>
+<h2>Q2 : What is Load Testing?</h2>
+<p>Answer</p>
+<p>Load testing measures system performance as the workload increases. That workload could mean concurrent users or transactions.The system is monitored to measure response time and system staying power as workload increases. That workload falls within the parameters of normal working conditions.</p>
+<hr>
+<p><em>Source:</em> <a href="https://stackify.com/ultimate-guide-performance-testing-and-software-testing/" title="What is Load Testing? Interview Questions Source To Answer" target="_blank" rel="nofollow noopener noreferrer">stackify.com</a></p>
+<h2>Q3 : Name some performance testing steps</h2>
+<p>Answer</p>
+<p>Some of the performance testing steps are:</p>
+<ul>
+<li>Identify the testing environment</li>
+<li>Identify performance metrics</li>
+<li>Plan and design performance tests</li>
+<li>Configure the test environment</li>
+<li>Implement your test design</li>
+<li>Execute tests</li>
+<li>Analyze, report, retest</li>
+</ul>
+<hr>
+<p><em>Source:</em> <a href="https://stackify.com/ultimate-guide-performance-testing-and-software-testing/" title="Name some performance testing steps Interview Questions Source To Answer" target="_blank" rel="nofollow noopener noreferrer">stackify.com</a></p>
+<h2>Q4 : What is the difference between unit tests and functional tests?</h2>
+<p>Answer</p>
+<ul>
+<li>Unit Test - testing an individual unit, such as a method (function) in a class, with all dependencies mocked up.</li>
+<li>Functional Test - AKA Integration Test, testing a slice of functionality in a system. This will test many methods and may interact with dependencies like Databases or Web Services.</li>
+</ul>
+<hr>
+<p><em>Source:</em> <a href="https://stackoverflow.com/questions/2741832/unit-tests-vs-functional-tests" title="What is the difference between unit tests and functional tests? Interview Questions Source To Answer" target="_blank" rel="nofollow noopener noreferrer">stackoverflow.com</a></p>
+<h2>Q5 : Difference between acceptance test and functional test?</h2>
+<p>Answer</p>
+<ul>
+<li>Functional testing: This is a <em>verification</em> activity; did we build a correctly working product? Does the software meet the business requirements? A functional test verifies that the product actually works as you (the developer) think it does.</li>
+<li>Acceptance testing: This is a <em>validation</em> activity; did we build the right thing? Is this what the customer really needs? Acceptance tests verify the product actually solves the problem it was made to solve. This can best be done by the user (customer), for instance performing his/her tasks that the software assists with.</li>
+</ul>
+<hr>
+<p><em>Source:</em> <a href="https://stackoverflow.com/questions/3370334/difference-between-acceptance-test-and-functional-test" title="Difference between acceptance test and functional test? Interview Questions Source To Answer" target="_blank" rel="nofollow noopener noreferrer">stackoverflow.com</a></p>
+<h2>Q6 : What is Mocking?</h2>
+<p>Answer</p>
+<p>Mocking is primarily used in unit testing. An object under test may have dependencies on other (complex) objects. To isolate the behavior of the object you want to replace the other objects by mocks that simulate the behavior of the real objects. This is useful if the real objects are impractical to incorporate into the unit test.</p>
+<p>In short, mocking is creating objects that simulate the behavior of real objects.</p>
+<hr>
+<p><em>Source:</em> <a href="https://stackoverflow.com/questions/2665812/what-is-mocking" title="What is Mocking? Interview Questions Source To Answer" target="_blank" rel="nofollow noopener noreferrer">stackoverflow.com</a></p>
+<h2>Q7 : What is profiling?</h2>
+<p>Answer</p>
+<p>Profiling measures how long various parts of the code take to run. Profilers are implemented a lot like debuggers too, except that rather than allowing you to stop the program and poke around, they simply let it run and keep track of how much time gets spent in every part of the program.</p>
+<p>This is particularly useful if you have some code that is running slower than you need it to run, as you can figure out exactly where all the time is going, and concentrate your efforts on fixing just that bottleneck.</p>
+<hr>
+<p><em>Source:</em> <a href="https://stackoverflow.com/questions/619898/what-is-profiling" title="What is profiling? Interview Questions Source To Answer" target="_blank" rel="nofollow noopener noreferrer">stackoverflow.com</a></p>
+<h2>Q8 : Explain the purpose of Scalability testing</h2>
+<p>Answer</p>
+<p>Scalability testing is used to determine if software is effectively handling increasing workloads. This can be determined by gradually adding to the user load or data volume while monitoring system performance. Also, the workload may stay at the same level while resources such as CPUs and memory are changed.</p>
+<hr>
+<p><em>Source:</em> <a href="https://stackify.com/ultimate-guide-performance-testing-and-software-testing/" title="Explain the purpose of Scalability testing Interview Questions Source To Answer" target="_blank" rel="nofollow noopener noreferrer">stackify.com</a></p>
+<h2>Q9 : Name most common problems observed in performance testing</h2>
+<p>Answer</p>
+<p>During <em>performance testing</em> of software, developers are looking for performance symptoms and issues. Speed issues --- slow responses and long load times for example --- often are observed and addressed. But there are other performance problems that can be observed:</p>
+<ul>
+<li>Bottlenecking --- This occurs when data flow is interrupted or halted because there is not enough capacity to handle the workload.</li>
+<li>Poor scalability --- If software cannot handle the desired number of concurrent tasks, results could be delayed, errors could increase, or other unexpected behavior could happen that affects:</li>
+<li>Disk usage</li>
+<li>CPU usage</li>
+<li>Memory leaks</li>
+<li>Operating system limitations</li>
+<li>Poor network configuration</li>
+<li>Software configuration issues --- Often settings are not set at a sufficient level to handle the workload.</li>
+<li>Insufficient hardware resources --- Performance testing may reveal physical memory constraints or low-performing CPUs.</li>
+</ul>
+<hr>
+<p><em>Source:</em> <a href="https://stackify.com/ultimate-guide-performance-testing-and-software-testing/" title="Name most common problems observed in performance testing Interview Questions Source To Answer" target="_blank" rel="nofollow noopener noreferrer">stackify.com</a></p>
+<h2>Q10 : What is Stress Testing?</h2>
+<p>Answer</p>
+<p>Stress testing --- also known as fatigue testing --- is meant to measure system performance outside of the parameters of normal working conditions. The software is given more users or transactions that can be handled. The goal of stress testing is to measure the software stability. At what point does software fail, and how does the software recover from failure?</p>
+<hr>
+<p><em>Source:</em> <a href="https://stackify.com/ultimate-guide-performance-testing-and-software-testing/" title="What is Stress Testing? Interview Questions Source To Answer" target="_blank" rel="nofollow noopener noreferrer">stackify.com</a></p>
+<h2>Q11 : Name some types of performance testing for software</h2>
+<p>Answer</p>
+<ul>
+<li>Load testing - measures system performance as the workload increases.</li>
+<li>Stress testing - measure system performance outside of the parameters of normal working conditions.</li>
+<li>Spike testing - evaluates software performance when workloads are substantially increased quickly and repeatedly.</li>
+<li>Endurance testing - an evaluation of how software performs with a normal workload over an extended amount of time.</li>
+<li>Scalability testing - used to determine if software is effectively handling increasing workloads.</li>
+<li>Volume testing - determines how efficiently software performs with a large, projected amounts of data.</li>
+</ul>
+<hr>
+<p><em>Source:</em> <a href="https://stackify.com/ultimate-guide-performance-testing-and-software-testing/" title="Name some types of performance testing for software Interview Questions Source To Answer" target="_blank" rel="nofollow noopener noreferrer">stackify.com</a></p>
+<h2>Q12 : Name some Performance Testing best practices</h2>
+<p>Related To: <a href="https://www.fullstack.cafe/interview-questions/software-architecture" target="_blank" rel="nofollow noopener noreferrer">Software Architecture</a></p>
+<p>Answer</p>
+<ul>
+<li>Test as early as possible in development.</li>
+<li>Conduct multiple performance tests to ensure consistent findings and determine metrics averages.</li>
+<li>Test the individual software units separately as well as together</li>
+<li>Baseline measurements provide a starting point for determining success or failure</li>
+<li>Performance tests are best conducted in test environments that are as close to the production systems as possible</li>
+<li>Isolate the performance test environment from the environment used for quality assurance testing</li>
+<li>Keep the test environment as consistent as possible</li>
+<li>Calculating averages will deliver actionable metrics. There is value in tracking outliers also. Those extreme measurements could reveal possible failures.</li>
+</ul>
+<hr>
+<p><em>Source:</em> <a href="https://stackify.com/ultimate-guide-performance-testing-and-software-testing/" title="Name some Performance Testing best practices Interview Questions Source To Answer" target="_blank" rel="nofollow noopener noreferrer">stackify.com</a></p>
+<h2>Q13 : What is Endurance Testing?</h2>
+<p>Answer</p>
+<p>Endurance testing --- also known as soak testing --- is an evaluation of how software performs with a normal workload over an extended amount of time. The goal of endurance testing is to check for system problems such as memory leaks. (A memory leak occurs when a system fails to release discarded memory. The memory leak can impair system performance or cause it to fail.)</p>
+<hr>
+<p><em>Source:</em> <a href="https://stackify.com/ultimate-guide-performance-testing-and-software-testing/" title="What is Endurance Testing? Interview Questions Source To Answer" target="_blank" rel="nofollow noopener noreferrer">stackify.com</a></p>
+<h2>Q14 : Name some Performance Testing metrics to measure</h2>
+<p>Related To: <a href="https://www.fullstack.cafe/interview-questions/software-architecture" target="_blank" rel="nofollow noopener noreferrer">Software Architecture</a></p>
+<p>Answer</p>
+<ul>
+<li>Response time - Total time to send a request and get a response.</li>
+<li>Wait time - Also known as average latency, this tells developers how long it takes to receive the first byte after a request is sent.</li>
+<li>Average load time - The average amount of time it takes to deliver every request is a major indicator of quality from a user’s perspective.</li>
+<li>Peak response time - This is the measurement of the longest amount of time it takes to fulfill a request. A peak response time that is significantly longer than average may indicate an anomaly that will create problems.</li>
+<li>Error rate - This calculation is a percentage of requests resulting in errors compared to all requests. These errors usually occur when the load exceeds capacity.</li>
+<li>Concurrent users - This the most common measure of load --- how many active users at any point. Also known as load size.</li>
+<li>Requests per second - How many requests are handled.</li>
+<li>Transactions passed/failed - A measurement of the total numbers of successful or unsuccessful requests.</li>
+<li>Throughput - Measured by kilobytes per second, throughput shows the amount of bandwidth used during the test.</li>
+<li>CPU utilization - How much time the CPU needs to process requests. Memory utilization - How much memory is needed to process the request.</li>
+</ul>
+<hr>
+<p><em>Source:</em> <a href="https://stackify.com/ultimate-guide-performance-testing-and-software-testing/" title="Name some Performance Testing metrics to measure Interview Questions Source To Answer" target="_blank" rel="nofollow noopener noreferrer">stackify.com</a></p>
+<h2>Q15 : Name some performance testing mistakes</h2>
+<p>Answer</p>
+<p>There are also some mistakes that can lead to less-than-reliable results when performance testing:</p>
+<ol>
+<li>Not enough time for testing.</li>
+<li>Not involving developers.</li>
+<li>Not using QA system similar to production system.</li>
+<li>Not sufficiently tuning software.</li>
+<li>Not having a troubleshooting plan.</li>
+</ol>
+<hr>
+<p><em>Source:</em> <a href="https://stackify.com/ultimate-guide-performance-testing-and-software-testing/" title="Name some performance testing mistakes Interview Questions Source To Answer" target="_blank" rel="nofollow noopener noreferrer">stackify.com</a></p>
+<h2>Q16 : What is a reasonable code coverage % for unit tests (and why)?</h2>
+<p>Answer</p>
+<p>Code coverage is great, but functionality coverage is even better. I don’t believe in covering every single line I write. But I do believe in writing 100% test coverage of all the functionality I want to provide (even for the extra cool features I came with myself and which were not discussed during the meetings).</p>
+<p>I don’t care if I would have code which is not covered in tests, but I would care if I would refactor my code and end up having a different behaviour. Therefore, 100% functionality coverage is my only target.</p>
+<hr>
+<p><em>Source:</em> <a href="https://stackoverflow.com/questions/90002/what-is-a-reasonable-code-coverage-for-unit-tests-and-why" title="What is a reasonable code coverage % for unit tests (and why)? Interview Questions Source To Answer" target="_blank" rel="nofollow noopener noreferrer">stackoverflow.com</a></p>
+<h2>Q17 : How would you unit test private methods?</h2>
+<p>Answer</p>
+<p>If you want to unit test a private method, something may be wrong. Unit tests are (generally speaking) meant to test the interface of a class, meaning its public (and protected) methods. You can of course “hack” a solution to this (even if just by making the methods public), but you may also want to consider:</p>
+<ol>
+<li>If the method you’d like to test is really worth testing, it may be worth to move it into its own class.</li>
+<li>Add more tests to the public methods that call the private method, testing the private method’s functionality. (As the commentators indicated, you should only do this if these private methods’s functionality is really a part in with the public interface. If they actually perform functions that are hidden from the user (i.e. the unit test), this is probably bad).</li>
+</ol>
+<hr>
+<p><em>Source:</em> <a href="https://stackoverflow.com/questions/250692/how-do-you-unit-test-private-methods" title="How would you unit test private methods? Interview Questions Source To Answer" target="_blank" rel="nofollow noopener noreferrer">stackoverflow.com</a></p>
+<h2>Q18 : How to interpret load/stress test metrics?</h2>
+<p>Answer</p>
+<ul>
+<li>Elapsed Time / Connect Time / Latency - should be as low as possible, ideally less than 1 second. Amazon found every 100ms costs them 1% in sales, which translates to several millions of dollars lost,</li>
+<li>Median - should be close to average elapsed response time,</li>
+<li>XX% line - should be as low as possible too. When it’s way lower than average elapsed time, it indicates that the last XX% requests have dramatically higher response times than lower ones,</li>
+<li>Standard Deviation - should be low. A high deviation indicates discrepancies in responses times, which translates to response time spikes.</li>
+</ul>
+<hr>
+<p><em>Source:</em> <a href="https://octoperf.com/blog/2017/10/19/how-to-analyze-jmeter-results/" title="How to interpret load/stress test metrics? Interview Questions Source To Answer" target="_blank" rel="nofollow noopener noreferrer">octoperf.com</a></p>
+<h2>Q19 : Explain some load testing metrics</h2>
+<p>Answer</p>
+<ul>
+<li>Throughput - is calculated as requests/unit of time. The time is calculated from the start of the first sample to the end of the last sample. This includes any intervals between samples, as it is supposed to represent the load on the server. Throughput = (number of requests) / (total time).</li>
+<li>Connect Time - Measures the time it took to establish the connection, including SSL handshake,</li>
+<li>Response time - is the elapsed time from the moment when a given request is sent to the server until the moment when the last bit of information has returned to the client</li>
+<li>Average response time - To get the average response time you should sum all samplers response time and devide to number of samplers. Sampler means user, request, hit, the meaning is the same.</li>
+<li>Min - the minimal response time in all samplers. Differently we may say the fastest response.</li>
+<li>Max - opposite of Min, the slowest response.</li>
+<li>Median - is a number which divides the samples into two equal halves. Half of the samples are smaller than the median, and half are larger.</li>
+<li>Error % - This column indicated the percentage of error HTTP response codes.</li>
+<li>Elapsed time - Measures the elapsed time from just before sending the request to just after the last chunk of the response has been received,</li>
+<li>Latency - Measures the latency from just before sending the request to just after the first chunk of the response has been received,</li>
+<li>90% Line (90th Percentile) - The elapsed time below which 90% of the samples fall</li>
+<li>Standard Deviation - Measure of the variability of a data set. This is a standard statistical measure</li>
+</ul>
+<hr>
+<p><em>Source:</em> <a href="https://stackoverflow.com/questions/10448516/apache-jmeter-listener-results-interpretation" title="Explain some load testing metrics Interview Questions Source To Answer" target="_blank" rel="nofollow noopener noreferrer">stackoverflow.com</a></p>
+<h2>Q20 : What is Spike Testing?</h2>
+<p>Answer</p>
+<p>Spike testing is a type of stress testing that evaluates software performance when workloads are substantially increased quickly and repeatedly. The workload is beyond normal expectations for short amounts of time.</p>
+<hr>
+<p><em>Source:</em> <a href="https://stackify.com/ultimate-guide-performance-testing-and-software-testing/" title="What is Spike Testing? Interview Questions Source To Answer" target="_blank" rel="nofollow noopener noreferrer">stackify.com</a></p>
+<h2>Q21 : What is Unit test, Integration Test, Smoke test, Regression Test and what are the differences between them? </h2>
+<p>Related To: <a href="https://www.fullstack.cafe/interview-questions/software-architecture" target="_blank" rel="nofollow noopener noreferrer">Software Architecture</a></p>
+<p>Answer</p>
+<ul>
+<li>Unit test: Specify and test one point of the contract of single method of a class. This should have a very narrow and well defined scope. Complex dependencies and interactions to the outside world are <a href="http://martinfowler.com/articles/mocksArentStubs.html" target="_blank" rel="nofollow noopener noreferrer">stubbed or mocked</a>.</li>
+<li>Integration test: Test the correct inter-operation of multiple subsystems. There is whole spectrum there, from testing integration between two classes, to testing integration with the production environment.</li>
+<li>
+<p>Smoke test (aka Sanity check): A simple integration test where we just check that when the system under test is invoked it returns normally and does not blow up.</p>
+<ul>
+<li>Smoke testing is both an analogy with electronics, where the first test occurs when powering up a circuit (if it smokes, it’s bad!)…</li>
+<li>… and, <a href="https://stackoverflow.com/questions/520064/what-is-unit-test-integration-test-smoke-test-regression-test#comment13627138_520116" target="_blank" rel="nofollow noopener noreferrer">apparently</a>, with <a href="https://en.wikipedia.org/wiki/Smoke_testing_(mechanical)" target="_blank" rel="nofollow noopener noreferrer">plumbing</a>, where a system of pipes is literally filled by smoke and then checked visually. If anything smokes, the system is leaky.</li>
+</ul>
+</li>
+<li>Regression test: A test that was written when a bug was fixed. It ensures that this specific bug will not occur again. The full name is “non-regression test”. It can also be a test made prior to changing an application to make sure the application provides the same outcome.</li>
+</ul>
+<p>To this, I will add:</p>
+<ul>
+<li>Acceptance test: Test that a feature or use case is correctly implemented. It is similar to an integration test, but with a focus on the use case to provide rather than on the components involved.</li>
+<li>System test: Tests a system as a black box. Dependencies on other systems are often mocked or stubbed during the test (otherwise it would be more of an integration test).</li>
+<li>Pre-flight check: Tests that are repeated in a production-like environment, to alleviate the ‘builds on my machine’ syndrome. Often this is realized by doing an acceptance or smoke test in a production like environment.</li>
+<li>
+<p>Canary test is an automated, non-destructive test that is run on a regular basis in a LIVE environment, such that if it ever fails, something really bad has happened. Examples might be:</p>
+<ul>
+<li>Has data that should only ever be available in DEV/TEST appeared in LIVE.</li>
+<li>Has a background process failed to run</li>
+<li>Can a user logon</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p><em>Source:</em> <a href="https://stackoverflow.com/questions/520064/what-is-unit-test-integration-test-smoke-test-regression-test" title="What is Unit test, Integration Test, Smoke test, Regression Test and what are the differences between them?  Interview Questions Source To Answer" target="_blank" rel="nofollow noopener noreferrer">stackoverflow.com</a></p>
+<h2>Q22 : What’s the difference between faking, mocking, and stubbing?</h2>
+<p>Answer</p>
+<p>Fake objects actually have working implementations, but usually take some shortcut which makes them not suitable for production</p>
+<p>Stubs provide canned answers to calls made during the test, usually not responding at all to anything outside what’s programmed in for the test. Stubs may also record information about calls, such as an email gateway stub that remembers the messages it ‘sent’, or maybe only how many messages it ‘sent’.</p>
+<p>Mocks are what we are talking about here: objects pre-programmed with expectations which form a specification of the calls they are expected to receive.</p>
+<hr>
+<p><em>Source:</em> <a href="https://stackoverflow.com/questions/346372/whats-the-difference-between-faking-mocking-and-stubbing" title="What&#x27;s the difference between faking, mocking, and stubbing? Interview Questions Source To Answer" target="_blank" rel="nofollow noopener noreferrer">stackoverflow.com</a></p>
+<h2>Q23 : What are best practices for Unit Testing methods that use cache heavily?</h2>
+<p>Related To: <a href="https://www.fullstack.cafe/interview-questions/design-patterns" target="_blank" rel="nofollow noopener noreferrer">Design Patterns</a>, <a href="https://www.fullstack.cafe/interview-questions/layering-and-middleware" target="_blank" rel="nofollow noopener noreferrer">Layering &#x26; Middleware</a></p>
+<p>Problem</p>
+<p>Consider</p>
+<div class="gatsby-highlight" data-language="typescript"><pre style="counter-reset: linenumber NaN" class="language-typescript line-numbers"><code class="language-typescript">IList<span class="token operator">&lt;</span>TObject<span class="token operator">></span> <span class="token function">AllFromCache</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span>
+
+TObject <span class="token function">FetchById</span><span class="token punctuation">(</span>guid id<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span>
+
+IList<span class="token operator">&lt;</span>TObject<span class="token operator">></span> <span class="token function">FilterByPropertry</span><span class="token punctuation">(</span>int property<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p><code class="language-text">Fetch.</code>. and <code class="language-text">Filter.</code>. would call <code class="language-text">AllFromCache</code> which would populate cache and return if it isn’t there and just return from it if it is. What are best practices for Unit Testing against this type of structure?</p>
+<p>Answer</p>
+<ul>
+<li>First of all, move <code class="language-text">AllFromCache()</code> into a repository class and call it <code class="language-text">GetAll()</code> to comply with Single Responsibility Principle. That it retrieves from the cache is an implementation detail of the repository and shouldn’t be known by the calling code.</li>
+<li>Second, wrap the class that gets the data from the database (or wherever) in a caching wrapper. AOP is a good technique for this. It’s one of the few things that it’s very good at.</li>
+</ul>
+<div class="gatsby-highlight" data-language="typescript"><pre style="counter-reset: linenumber NaN" class="language-typescript line-numbers"><code class="language-typescript"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ProductManager</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">private</span> IProductRepository ProductRepository <span class="token punctuation">{</span> <span class="token keyword">get</span><span class="token punctuation">;</span> <span class="token keyword">set</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> ProductManager
+    <span class="token punctuation">{</span>
+        ProductRepository <span class="token operator">=</span> productRepository<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    Product <span class="token function">FetchById</span><span class="token punctuation">(</span>guid id<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span>
+
+    IList<span class="token operator">&lt;</span>Product<span class="token operator">></span> <span class="token function">FilterByPropertry</span><span class="token punctuation">(</span>int property<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">IProductRepository</span>
+<span class="token punctuation">{</span>
+    IList<span class="token operator">&lt;</span>Product<span class="token operator">></span> <span class="token function">GetAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">SqlProductRepository</span> <span class="token operator">:</span> IProductRepository
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> IList<span class="token operator">&lt;</span>Product<span class="token operator">></span> <span class="token function">GetAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token comment">// DB Connection, fetch</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">CachedProductRepository</span> <span class="token operator">:</span> IProductRepository
+<span class="token punctuation">{</span>
+    <span class="token keyword">private</span> IProductRepository ProductRepository <span class="token punctuation">{</span> <span class="token keyword">get</span><span class="token punctuation">;</span> <span class="token keyword">set</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token function">CachedProductRepository</span> <span class="token punctuation">(</span>IProductRepository productRepository<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        ProductRepository <span class="token operator">=</span> productRepository<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> IList<span class="token operator">&lt;</span>Product<span class="token operator">></span> <span class="token function">GetAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token comment">// Check cache, if exists then return,</span>
+        <span class="token comment">// if not then call GetAll() on inner repository</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<ul>
+<li>If you want true Unit Tests, then you have to <em>mock the cache</em>: write a mock object that implements the same interface as the cache, but instead of being a cache, it keeps track of the calls it receives, and always returns what the real cache should be returning according to the test case.</li>
+<li>Of course the cache itself also needs unit testing then, for which you have to mock anything it depends on, and so on.</li>
+</ul>
+<hr>
+<p><em>Source:</em> <a href="https://softwareengineering.stackexchange.com/questions/185138/best-practices-for-unit-testing-methods-that-use-cache-heavily" title="What are best practices for Unit Testing methods that use cache heavily? Interview Questions Source To Answer" target="_blank" rel="nofollow noopener noreferrer">softwareengineering.stackexchange.com</a></p>
+<h2>Q24 : Could you name some common Performance Testing fallacies?</h2>
+<p>Answer</p>
+<ul>
+<li>Performance testing is the last step in development</li>
+<li>More hardware can fix performance issues</li>
+<li>The testing environment is close enough</li>
+<li>What works now, works across the board</li>
+<li>One performance testing scenario is enough</li>
+<li>Testing each part equals testing the whole system</li>
+<li>Software developers are too experienced to need performance testing</li>
+<li>Test scripts are actual users</li>
+</ul>
+<hr>
+<p><em>Source:</em> <a href="https://stackify.com/ultimate-guide-performance-testing-and-software-testing/" title="Could you name some common Performance Testing fallacies? Interview Questions Source To Answer" target="_blank" rel="nofollow noopener noreferrer">stackify.com</a></p>
+<h2>Q25 : Why would you conduct Volume Testing?</h2>
+<p>Answer</p>
+<p>Volume testing determines how efficiently software performs with a large, projected amounts of data. It is also known as flood testing because the test floods the system with data.</p>
+<hr>
+<p><em>Source:</em> <a href="https://stackify.com/ultimate-guide-performance-testing-and-software-testing/" title="Why would you conduct Volume Testing? Interview Questions Source To Answer" target="_blank" rel="nofollow noopener noreferrer">stackify.com</a></p>
+<h2>Q26 : Is Unit Testing worth the effort?</h2>
+<p>Answer</p>
+<ul>
+<li>Unit Tests allows you to make big changes to code quickly. You know it works now because you’ve run the tests, when you make the changes you need to make, you need to get the tests working again. This saves hours.</li>
+<li>TDD helps you to realise when to stop coding. Your tests give you confidence that you’ve done enough for now and can stop tweaking and move on to the next thing.</li>
+<li>The tests and the code work together to achieve better code. Your code could be bad / buggy. Your TEST could be bad / buggy. In TDD you are banking on the chances of both being bad / buggy being low. Often it’s the test that needs fixing but that’s still a good outcome.</li>
+<li>TDD helps with coding constipation. When faced with a large and daunting piece of work ahead writing the tests will get you moving quickly.</li>
+<li>Unit Tests help you really understand the design of the code you are working on. Instead of writing code to do something, you are starting by outlining all the conditions you are subjecting the code to and what outputs you’d expect from that.</li>
+<li>Unit Tests give you instant visual feedback, we all like the feeling of all those green lights when we’ve done. It’s very satisfying. It’s also much easier to pick up where you left off after an interruption because you can see where you got to - that next red light that needs fixing.</li>
+<li>Contrary to popular belief unit testing does not mean writing twice as much code, or coding slower. It’s faster and more robust than coding without tests once you’ve got the hang of it. Test code itself is usually relatively trivial and doesn’t add a big overhead to what you’re doing. This is one you’ll only believe when you’re doing it :)</li>
+<li>I think it was Fowler who said: “Imperfect tests, run frequently, are much better than perfect tests that are never written at all”. I interpret this as giving me permission to write tests where I think they’ll be most useful even if the rest of my code coverage is woefully incomplete.</li>
+<li>Good unit tests can help document and define what something is supposed to do</li>
+<li>Unit tests help with code re-use. Migrate both your code and your tests to your new project. Tweak the code till the tests run again.</li>
+</ul>
+<hr>
+<p><em>Source:</em> <a href="https://stackoverflow.com/questions/67299/is-unit-testing-worth-the-effort" title="Is Unit Testing worth the effort? Interview Questions Source To Answer" target="_blank" rel="nofollow noopener noreferrer">stackoverflow.com</a></p>
+<h2>Q27 : How do I test a private function or a class that has private methods, fields or inner classes?</h2>
+<p>Related To: <a href="https://www.fullstack.cafe/interview-questions/software-architecture" target="_blank" rel="nofollow noopener noreferrer">Software Architecture</a>, <a href="https://www.fullstack.cafe/interview-questions/oop" target="_blank" rel="nofollow noopener noreferrer">OOP</a></p>
+<p>Answer</p>
+<p>The best way to test a private method is via another public method. If this cannot be done, then one of the following conditions is true:</p>
+<ol>
+<li>The private method is dead code</li>
+<li>There is a design smell near the class that you are testing</li>
+<li>The method that you are trying to test should not be private</li>
+</ol>
+<p>Also, by testing private methods you are testing the implementation. This defeats the purpose of unit testing, which is to test the inputs/outputs of a class’ contract. A test should only know enough about the implementation to mock the methods it calls on its dependencies. Nothing more. If you can not change your implementation without having to change a test - chances are that your test strategy is poor.</p>
+<hr>
+<p><em>Source:</em> <a href="https://stackoverflow.com/questions/34571/how-do-i-test-a-private-function-or-a-class-that-has-private-methods-fields-or" title="How do I test a private function or a class that has private methods, fields or inner classes? Interview Questions Source To Answer" target="_blank" rel="nofollow noopener noreferrer">stackoverflow.com</a></p>
+<hr>
+<p><a href="http://bit.ly/pauloluan-insta" target="_blank" rel="nofollow noopener noreferrer"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--_qQqH59e--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3jzrvlwsqdrz7j5wgtxb.png" alt="Instagram Paulo Luan"></a></p>
+<hr></section><hr style="margin-bottom:1.75rem"/><footer></footer></article></main><footer>2021<!-- --> <a href="https://bit.ly/pauloluan-insta">Reativa Tecnologia</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script src="https://platform.twitter.com/widgets.js"></script><script src="https://www.instagram.com/embed.js"></script><script src="https://embedr.flickr.com/assets/client-code.js"></script><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-155080700-5', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/questions/testes/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-78cdc6a84a6e659c51c0.js"],"app":["/app-6d831502f5b033c00c9a.js"],"component---src-pages-404-js":["/component---src-pages-404-js-443b9414fd7616b09644.js"],"component---src-pages-index-js":["/component---src-pages-index-js-1b8a1780a3d052ddcc51.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-eea8ccbf252e87f3a147.js"]};/*]]>*/</script><script src="/polyfill-78cdc6a84a6e659c51c0.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-eea8ccbf252e87f3a147.js" async=""></script><script src="/cd7d5f864fc9e15ed8adef086269b0aeff617554-1c0ef869a859675a1e93.js" async=""></script><script src="/commons-8efd3e762cdb1d39fca0.js" async=""></script><script src="/app-6d831502f5b033c00c9a.js" async=""></script><script src="/532a2f07-8d0154c2cf59560b38a4.js" async=""></script><script src="/framework-8e528b732ab2eaadb7b7.js" async=""></script><script src="/styles-755093da0c07f4b49226.js" async=""></script><script src="/webpack-runtime-21c9d4a6b4882039bec8.js" async=""></script></body></html>
